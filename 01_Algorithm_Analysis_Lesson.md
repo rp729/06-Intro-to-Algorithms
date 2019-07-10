@@ -4,6 +4,8 @@
 
 ## Algorithm Analysis
 
+---
+
 **Objectives**
 
 **In this chapter, you will:**:
@@ -14,11 +16,12 @@
 
 ---
 
-**Efficiency of an algorithm can be analyzed at two different stages, before implementation and after implementation. They are the following: **
+**Efficiency of an algorithm can be analyzed at two different stages, before implementation and after implementation. They are the following:**
 
 * **A Priori Analysis**  − This is a theoretical analysis of an algorithm. Efficiency of an algorithm is measured by assuming that all other factors, for example, processor speed, are constant and have no effect on the implementation.
 * **A Posterior Analysis**  − This is an empirical analysis of an algorithm. The selected algorithm is implemented using programming language. This is then executed on target computer machine. In this analysis, actual statistics like running time and space required, are collected.
 
+---
 ### Algorithm Complexity
 
 Suppose  **X**  is an algorithm and  **n**  is the size of input data, the time and space used by the algorithm X are the two main factors, which decide the efficiency of X.
@@ -28,6 +31,7 @@ Suppose  **X**  is an algorithm and  **n**  is the size of input data, the time 
 
 The complexity of an algorithm **f(n)** gives the running time and/or the storage space required by the algorithm in terms of  **n**  as the size of input data.
 
+---
 ### Space Complexity
 
 Space complexity of an algorithm represents the amount of memory space required by the algorithm in its life cycle. The space required by an algorithm is equal to the sum of the following two components −
@@ -41,6 +45,7 @@ Space complexity S(P) of any algorithm P is S(P) = C + SP(I), where C is the fix
 
 Here we have three variables A, B, and C and one constant. Hence S(P) = 1 + 3. Now, space depends on data types of given variables and constant types and it will be multiplied accordingly.
 
+---
 ### Time Complexity
 
 Time complexity of an algorithm represents the amount of time required by the algorithm to run to completion. Time requirements can be defined as a numerical function T(n), where T(n) can be measured as the number of steps, provided each step consumes constant time.
