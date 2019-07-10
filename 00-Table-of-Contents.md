@@ -4,7 +4,7 @@
 
 ---
 
-**When using the Table of Contents to navigate the course; please remember to use the back arrow to return to the table upon completion of each open section.  You will need to go out to 07-Network-Programming to reopen the table of contents if you do not use the back arrow.**
+**When using the Table of Contents to navigate the course; please remember to use the back arrow to return to the table upon completion of each open section.  You will need to go to the table of contents if you do not use the back arrow.**
 
 ---
 
@@ -33,3 +33,5 @@
   * [Trees Example](22_Trees_Examples_Trees.md)
   * [Tree Led Demonstration](23_Tree_Led_Demos.md)
   * [Performance Lab 5](24_Trees_Perf_Labs.md)
+  
+  
