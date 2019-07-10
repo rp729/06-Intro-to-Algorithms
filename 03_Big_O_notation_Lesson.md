@@ -1,12 +1,8 @@
-```
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md"> Return to TOC </a>
 
-```
-Notes On Big-O Notation
+---
 
-```
-CyberTraining USAF 
-```
-
+## Notes On Big-O Notation
 
 - We use big-O notation in the analysis of algorithms to describe an algorithm’s usage
     of computational resources, in a way that is independent of computer architecture or
@@ -38,8 +34,9 @@ CyberTraining USAF
           doing analysis on the human genome or data from Hubble involves input (arrays
           or lists) of size well into the tens of millions (of base pairs, pixels, etc).
 
-## 1
+---
 
+### 1
 
 - At this scale it becomes easy to see why big O notation is helpful. Say you’re run­
     ning a program to analyze base pairs and have two different implementations: one
@@ -85,8 +82,10 @@ when we talk about big-O notation, we always drop coefficient multipliers - beca
 they don’t make a difference. Thus, if you’re analysing your function and you get that
 it is O(n) + O(n), that doesn’t equal O(2n) - we simply say it is O(n).
 ```
-## 2
 
+---
+
+### 2
 
 ```
 One more question for you: Does O(100n^2 + 41 n^3 ) = O(n^3 )?
@@ -130,9 +129,10 @@ q = (w**z) % 870
 
 return 9*q
 ```
-## 3
 
+---
 
+### 3
 
 2. Functions containing for loops that go through the whole input are generally O(n).
     For example, above we defined a function mul that was constant-time as it used the
@@ -182,9 +182,10 @@ return num
 ```
 What is the big-O bound on factorial2?
 ```
-## 4
 
+---
 
+### 4
 
 5. The complexity of conditionals depends on what the condition is. The complexity
     of the condition can be constant, linear, or even worse - it all depends on what the
@@ -231,9 +232,9 @@ the for loop is O(n). Each iteration of the for loop executes a conditional chec
 is, in the worst case, O(m). Since we execute an O(m) check O(n) time, we say this
 function is O(nm).
 
+---
+
 ## 5
-
-
 
 6. While loops: With while loops you have to combine the analysis of a conditional with
     one of a for loop.
@@ -284,8 +285,10 @@ for i in range(z):
 for j in range(z):
 result += (i*j)
 ```
-## 6
 
+---
+
+### 6
 
 8. Recursion. Recursion can be tricky to figure out; think of recursion like a tree. If the
     tree has lots of branches, it will be more complex than one that has very few branches.
@@ -337,8 +340,10 @@ n = 2 x^
 log 2 n = log 2 ( 2 x)
 ∴ x = log 2 n
 ```
-## 7
 
+---
+
+### 7
 
 So, it’ll take log 2 n steps to solve this recursive equation. In general, we can say that
 if a recursive function g(x) makes a recursive call to a subproblem of size x/b, the
@@ -355,16 +360,6 @@ bound on fib is O( 2 n). In fact, there exists a tighter bound on Fibonacci invo
 Golden Ratio; Google for “Fibonacci complexity” to find out more if you’re interested
 in maths : D
 
-## 8
+---
 
-
-
-```
-
-```
-Introduction to Computer Science and Programming
-
-
-
-
-
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/04_Big_O_Analysis_Demos.md"> Continue to Next topic </a>
