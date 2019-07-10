@@ -18,4 +18,4 @@ algorithms for building easy and maintainable applications.
 
 ---
 
-<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md" > Continue to Next Topic </a>
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/01_Algorithm_Analysis_Lesson.md" > Continue to Next Topic </a>
