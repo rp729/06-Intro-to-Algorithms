@@ -1,3 +1,7 @@
+<a href="https://github.com/CyberTrainingUSAF/01-Course-Introduction-and-setup/blob/master/README.md" rel="Return to Course Introduction"> Return to Course introduction </a>
+
+---
+
 # Intro-to-Algorithms
 In this section, the Student will learn to implement complex data structures and algorithms using Python
 
@@ -11,3 +15,7 @@ Alogrithm and Data structures allow you to store and organize data efficiently.
 They are critical to any problem, provide a complete solution, and act like reusable code. 
 Overall, this Introduction to Algorithms with Python will teach you the essential Python data structures and the most common
 algorithms for building easy and maintainable applications.
+
+---
+
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md" > Continue to Next Topic </a>
