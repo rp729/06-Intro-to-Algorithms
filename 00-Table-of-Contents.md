@@ -16,7 +16,6 @@
   * [Performance Lab 1](05_Analysis_Perf_Labs.md)
 * [Searching Algorithms](06_Searching_Algorithms.md)
 * [Sorting Algorthms](07_Sorting_Algorithms.md)
-* [List Pointer Structures](08_Lists_Pointer
 * [List Pointer Structures](08_Lists_Pointer_Structures.md)
   * [Singly Linked List](09_Singly_Linked_List.md)
   * [Doubly Linked List](10_Doubly_Linked_List.md)
