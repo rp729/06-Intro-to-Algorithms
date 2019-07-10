@@ -1,4 +1,8 @@
-# Exercise Labs
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md"> Return to TOC </a>
+
+---
+
+## Exercise Labs
 
 ![image](https://user-images.githubusercontent.com/19671036/60618009-a0cfad00-9d9a-11e9-9d1c-45ecd62a0825.png)
 
