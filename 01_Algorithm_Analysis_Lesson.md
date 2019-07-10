@@ -1,7 +1,10 @@
 # Objectives
+This topic provides the student with knowledge and skills on:
 1. Understand the process of Algorithm Analysis
 2. Explore the characteristics of Algorithm Complexity
-
+    - Space Complexity
+    - Time Complexity
+    
 # Algorithm Analysis
 
 Efficiency of an algorithm can be analyzed at two different stages, before implementation and after implementation. They are the following −
