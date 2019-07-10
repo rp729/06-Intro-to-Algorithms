@@ -1,16 +1,22 @@
-**Objectives**
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md"> Return to TOC </a>
 
-• To understand why algorithm analysis is important.
+---
 
-• To be able to use &quot;Big-O&quot; to describe execution time.
+## Objectives
 
-• To understand the &quot;Big-O&quot; execution time of common operations on Python lists and dictionaries.
+* **Demonstrate an understanding of why algorithm analysis is important**
 
-• To understand how the implementation of Python data impacts algorithm analysis.
+* **Use &quot;Big-O&quot; to describe execution time**
 
-• To understand how to benchmark simple Python programs.
+* **Understand the &quot;Big-O&quot; execution time of common operations on Python lists and dictionaries**
 
-EXAMPLE 1:
+* **Understand how the implementation of Python data impacts algorithm analysis**
+
+* **Understand how to benchmark simple Python programs**
+
+---
+
+**EXAMPLE 1:**
 
  File: timing1.py
 
@@ -20,8 +26,10 @@ using a single loop.
 
 Expected OUTPUT:
 ![image](https://user-images.githubusercontent.com/19671036/60616985-4df4f600-9d98-11e9-80ff-db47ee401f22.png)
- 
-Example 2
+
+---
+
+**Example 2**
 
 Timing2.py
 ![image](https://user-images.githubusercontent.com/19671036/60617003-56e5c780-9d98-11e9-86d2-922cb9b93420.png)
@@ -29,14 +37,15 @@ Timing2.py
 Expected Output:
 ![image](https://user-images.githubusercontent.com/19671036/60617041-6cf38800-9d98-11e9-88a0-34d0c456f8c2.png)
 
- 
-EXAMPLE 3:
+---
+
+**EXAMPLE 3:**
 ![image](https://user-images.githubusercontent.com/19671036/60617105-97dddc00-9d98-11e9-8f38-fcbfd1ce642e.png)
 
 Expected OUTPUT:
 ![image](https://user-images.githubusercontent.com/19671036/60617116-a3c99e00-9d98-11e9-9a8c-41d20793fc01.png)
  
-Example 4:
+**Example 4:**
 ![image](https://user-images.githubusercontent.com/19671036/60617131-af1cc980-9d98-11e9-906b-9ef70afefe92.png)
 
 EXPECTED OUTPUT:
@@ -55,9 +64,9 @@ Comparing Data Items Example
 ![image](https://user-images.githubusercontent.com/19671036/60617320-1cc8f580-9d99-11e9-8ba7-0fcfc7434aaf.png)
  ![image](https://user-images.githubusercontent.com/19671036/60617339-27838a80-9d99-11e9-89df-8a5a8e338369.png)
  
-Basic Sort algorithms
+## Basic Sort algorithms
 
-Example 1:
+**Example 1:**
 ![image](https://user-images.githubusercontent.com/19671036/60617371-35d1a680-9d99-11e9-985c-5c3701d73885.png)
 
  
