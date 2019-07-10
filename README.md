@@ -2,9 +2,9 @@
 In this section, the Student will learn to implement complex data structures and algorithms using Python
 
 # The Student will learn Key Features:
-Understand the analysis and design of fundamental Python data structures
-Explore advanced Python concepts such as Big O notation and dynamic programming
-Learn functional and reactive implementations of traditional data structures
+-Understand the analysis and design of fundamental Python data structures
+-Explore advanced Python concepts such as Big O notation and dynamic programming
+-Learn functional and reactive implementations of traditional data structures
 
 
 Alogrithm and Data structures allow you to store and organize data efficiently. 
