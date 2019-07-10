@@ -6,8 +6,8 @@
 
 **Objectives**
 
-**In this chapter, you will learn about:**
-* Demonstrate an understanding of why algorithm analysis is important
+**In this chapter, you will:**
+* Understand why algorithm analysis is important
 * Use &quot;Big-O&quot; to describe execution time
 * Understand the &quot;Big-O&quot; execution time of common operations on Python lists and dictionaries
 * Understand how the implementation of Python data impacts algorithm analysis
@@ -105,3 +105,7 @@ Comparing Data Items Example
 ![image](https://user-images.githubusercontent.com/19671036/60617697-e2138d00-9d99-11e9-9a4d-a8a84e11fc26.png)
 
 ![image](https://user-images.githubusercontent.com/19671036/60617708-e8096e00-9d99-11e9-9fd9-bdffdc827f0e.png)
+
+---
+
+
