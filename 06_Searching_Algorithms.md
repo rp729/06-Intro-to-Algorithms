@@ -1,7 +1,10 @@
-## Searching is integral to life - we search for things all the time - or at least I do! As often is the case, just as it is in life, so it is in computer science and searching plays a very important role when it comes to working with data.  a  **search algorithm**  is any algorithm which solves the Search problem, namely, to retrieve information stored within some data structure, or calculated in the search space of a problem domain. Examples of such structures include but are not limited to a Linked List, an Array data structure, or a Search tree. The appropriate search algorithm often depends on the data structure being searched, but also on any a priori knowledge about the data. Searching also encompasses algorithms that query the data structure, such as the SQL SELECT command.
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md"> Return to TOC </a>
 
-##
-# Linear Search Algorithm
+---
+
+**Searching is integral to life** - We search for things all the time; or at least I do! As often is the case, just as it is in life, so it is in computer science and searching plays a very important role when it comes to working with data.  A  **search algorithm**  is any algorithm which solves the Search problem, namely, to retrieve information stored within some data structure, or calculated in the search space of a problem domain. Examples of such structures include but are not limited to a Linked List, an Array data structure, or a Search tree. The appropriate search algorithm often depends on the data structure being searched, but also on any a priori knowledge about the data. Searching also encompasses algorithms that query the data structure, such as the **SQL SELECT** command.
+
+### Linear Search Algorithm
 
 The _Linear Search a_lgorithm is a simple algorithm, where each item in the list (starting from the first item) is investigated until the required item is found, or the end of the list is reached.
 
@@ -25,8 +28,7 @@ As we can see, Python proves itself again to be a programming language that make
 
 It is important to note that there are other types of sorting and searching algorithms.
 
-#
-# Binary Search
+### Binary Search
 
 Given a sorted array arr[] of n elements, write a function to search a given element x in arr[].
 
