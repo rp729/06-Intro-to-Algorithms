@@ -1,4 +1,10 @@
-Algorithm Design
+# Objectives 
+This topic provides the student with knowledge and skills on:
+ 1. ALgorithm Design
+ 2. Characteristics of an Algorithm
+ 3. How to write and algorithm
+ 
+#Algorithm Design
 
 Algorithm is a step-by-step procedure, which defines a set of instructions to be executed in a certain order to get the desired output. Algorithms are generally created independent of underlying languages, i.e. an algorithm can be implemented in more than one programming language.
 
