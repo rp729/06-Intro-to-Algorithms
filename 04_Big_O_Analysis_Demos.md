@@ -2,7 +2,7 @@
 
 ---
 
-### Introduction to Algorithms
+## Introduction to Algorithms
 
 **Objectives**
 
@@ -14,6 +14,7 @@
 * Understand how to benchmark simple Python programs
 
 ---
+### Demonstration Labs
 
 **Algorithms Demo 1:**
 
@@ -89,7 +90,7 @@ Timing2.py
 
 ---
 
-**Basic Sort algorithms**
+### Basic Sort Algorithms
 
 **Basic Sort Demo 1:**
 
@@ -105,7 +106,7 @@ Timing2.py
  
  ---
  
-**BUBBLE SORT ALGORITHM**
+**Bubble Sort Algorithms**
 
 ![image](https://user-images.githubusercontent.com/19671036/60617432-5a2d8300-9d99-11e9-98a7-244e41034f3f.png)
 
@@ -129,7 +130,10 @@ Timing2.py
 
 ---
 
-### Quick Sort & Merge Sort Algorithms
+```
+**Quick Sort & Merge Sort Algorithms**
+
+```
 
 **Quicksort:**
 
