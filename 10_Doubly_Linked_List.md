@@ -6,7 +6,7 @@
 
 **Objectives**
 
-* detailed understanding on what is a doubly linked list
+* Detailed understanding on what is a doubly linked list
 * Understand how to create doubly linked lists
 * Understand how to print all the nodes in a list
 
