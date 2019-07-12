@@ -108,4 +108,5 @@ Comparing Data Items Example
 
 ---
 
-
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/05_Analysis_Perf_Labs.md
+"> Continue to Exercise Labs </a>
