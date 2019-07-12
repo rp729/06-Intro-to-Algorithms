@@ -51,3 +51,5 @@ Here we have three variables A, B, and C and one constant. Hence S(P) = 1 + 3. N
 Time complexity of an algorithm represents the amount of time required by the algorithm to run to completion. Time requirements can be defined as a numerical function T(n), where T(n) can be measured as the number of steps, provided each step consumes constant time.
 
 For example, addition of two n-bit integers takes  **n**  steps. Consequently, the total computational time is T(n) = c ∗ n, where c is the time taken for the addition of two bits. Here, we observe that T(n) grows linearly as the input size increases.
+
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/02_Algorithm_Design_Lesson.md"> Continue to next Topic </a>
