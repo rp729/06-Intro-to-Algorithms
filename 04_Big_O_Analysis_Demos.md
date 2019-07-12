@@ -130,10 +130,9 @@ Timing2.py
 
 ---
 
-```
-**Quick Sort & Merge Sort Algorithms**
+# Quick Sort & Merge Sort Algorithms
 
-```
+---
 
 **Quicksort:**
 
