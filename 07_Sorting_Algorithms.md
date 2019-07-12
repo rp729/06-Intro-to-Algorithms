@@ -60,11 +60,13 @@ Write a Python program to sort a list of elements using the bubble sort algorith
 
 ---
 
-**Merge Sort**
+### Merge Sort
+
+---
 
 ![image](https://user-images.githubusercontent.com/19671036/60606135-66591680-9d80-11e9-96a9-e588d887d4e2.png)
 
-Merge sort first divides the array into equal halves and then combines them in a sorted manner.
+**Merge sort divides the array into equal halves and then combines them in a sorted manner**
 
 ```
 def merge\_sort(unsorted\_list):
@@ -110,6 +112,7 @@ unsorted\_list =[64,34,25,12,22,11,90]
 print(merge\_sort(unsorted\_list))
 
 ```
+
 **When the above code is executed, it produces the following result:**
 
 [11,12,22,25,34,64,90]
