@@ -65,6 +65,10 @@ Timing2.py
  
  ---
  
+ ### Search Algorithms
+ 
+ ---
+ 
 **Minimum Example Search**
 
 ![image](https://user-images.githubusercontent.com/19671036/60617222-e4291c00-9d98-11e9-9e12-9ea864aa530e.png)
@@ -86,8 +90,6 @@ Timing2.py
 **Comparing Data Items**
 
 ![image](https://user-images.githubusercontent.com/19671036/60617320-1cc8f580-9d99-11e9-8ba7-0fcfc7434aaf.png)
-
----
 
 ![image](https://user-images.githubusercontent.com/19671036/60617339-27838a80-9d99-11e9-89df-8a5a8e338369.png)
 
