@@ -14,7 +14,10 @@
 * Understand how to benchmark simple Python programs
 
 ---
+
 ### Demonstration Labs
+
+---
 
 **Algorithms Demo 1:**
 
@@ -90,7 +93,9 @@ Timing2.py
 
 ---
 
-### Basic Sort Algorithms
+### Sort Algorithms
+
+---
 
 **Basic Sort Demo 1:**
 
