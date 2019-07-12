@@ -1,11 +1,29 @@
-# Singly Linked List
-To learn about a singly linked list, you should know: 
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md"> Return to TOC </a>
 
-Python 3
-OOP concepts
-What are singly linked lists?
+---
 
-In this tutorial, we will learn about what singly linked lists are and some very basic operations that can be performed on them.
+## Singly Linked List
+
+**Objectives**
+
+* detailed understanding on what is a singly linked list
+* Understand how singly linked list are used
+* Understand basic operations that can be performed on singly linked lists
+* Perform basic operations on singly linked lists
+
+---
+
+**Pre-requirments**
+
+Prior to this topic, you should have a basic understanding of: 
+
+* Python 3
+* OOP concepts
+* Basic understanding of the purpose of singly linked lists
+
+---
+
+**Nodes**
 
 Before we get into the details of what singly lists are, we must learn what nodes are. This is because nodes are the building blocks of a linked list. A node consists of two parts:
 
@@ -41,19 +59,41 @@ Finally, increment the size attribute by 1. It is always a good practice to retu
 Print Nodes
 This is a method of the LinkedList class. To print the data present in all the nodes of the linked list, we need to traverse one node at a time and print each node’s data part.
 
-# Coding a Singly Linked List
+---
+
+**Coding a Singly Linked List**
+
 ![image](https://user-images.githubusercontent.com/19671036/60899637-68175400-a230-11e9-90ba-2c47735892d7.png)
+
+---
+
 ![image](https://user-images.githubusercontent.com/19671036/60899703-83825f00-a230-11e9-9a70-d23911da1699.png)
 
-What are the advantages and disadvantages of Singly Linked Lists?
-Advantages
+---
 
-It’s a dynamic data structure in which insertion and deletion are simple as we don’t need to shift the elements. Just updating the next pointer will do the job for us.
-Stack and Queue data structures can be easily implemented using linked lists.
-Disadvantages
+**What are the advantages and disadvantages of Singly Linked Lists?**  
 
-Additional memory is used up by the next pointers.
-Random access is not possible. You must traverse the linked list from the beginning to get to a particular node.
-Conclusion
-That’s it for this tutorial. In the future tutorials, we will see how to remove an element from the linked list, how to find if an element exists in the linked list etc.
+* **Advantages**
 
+  * It’s a dynamic data structure in which insertion and deletion are simple as we don’t need to shift the elements. Just updating the next pointer will do the job for us.
+  * Stack and Queue data structures can be easily implemented using linked lists.
+
+* **Disadvantages**
+
+  * Additional memory is used up by the next pointers.
+  * Random access is not possible. You must traverse the linked list from the beginning to get to a particular node.
+
+---
+
+**Summary**
+
+Throughout this topic we covered:
+* Nodes
+* What singly linked list are
+* Some basic coding of a singly linked list
+* Advantages of singly linked lists
+* Disadvantages of singly linked lists
+
+---
+
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/10_Doubly_Linked_List.md"> Continue to next Topic </a>
