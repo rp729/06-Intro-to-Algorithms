@@ -1,15 +1,27 @@
-# Lists and Pointer Structures
-You will have already seen lists in Python. They are convenient and powerful. Normally, any time you need to store something in a list, you use python's built-in list implementation. In this chapter, however, we are more interested in understanding how lists work. So we are going to study list internals. As you will notice, there are different types of lists.
+
+
+---
+
+## Lists and Pointer Structures
+
+**Objectives**
+
+**By the end of this lesson topic you should:**
+
+* Understand pointers in Python
+* Treating the concept of nodes
+* Implementing singly, doubly, and circularly linked lists
+
+---
+**Introduction**
+
+At this point in training you will have already seen lists in Python. They are convenient and powerful. Normally, any time you need to store something in a list, you use python's built-in list implementation. In this chapter, however, we are more interested in understanding how lists work. So we are going to study list internals. As you will notice, there are different types of lists.
 
 Python's list implementation is designed to be powerful and to encompass several different use cases. We are going to be a bit more strict in our definition of what a list is. The concept of a node is very important to lists. We shall discuss them in this chapter, but this concept will, in different forms, come back throughout the rest of the book.
-
-## The focus of this Lesson will be the following:
-```
--Understand pointers in Python
--Treating the concept of nodes
--Implementing singly, doubly, and circularly linked lists
-```
 In this lesson, we are going to deal quite a bit with pointers. So it may be useful to remind ourselves what these are. 
+
+---
+**Understanding Pointers in Python**
 
 To begin with, imagine that you have a house that you want to sell. Lacking time, you contact an agent to find interested buyers. So you pick up your house and take it over to the agent, who will in turn carry the house to anybody who may want to buy it. Ludicrous, you say? Now imagine that you have a few Python functions that work with images. So you pass high-resolution image data between your functions.
 
@@ -31,7 +43,10 @@ We would normally say that s is a variable of the type set. That is, s is a set.
 
 Python hides this complexity from us. We can safely assume that s is a set and that everything works fine.
 
-# Arrays
+---
+
+### Arrays
+
 An array is a sequential list of data. Being sequential means that each element is stored right after the previous one in memory. 
 If your array is really big and you are low on memory, it could be impossible to find large enough storage to fit your entire array. 
 This will lead to problems.
@@ -40,7 +55,9 @@ Of course, the flip side of the coin is that arrays are very fast.
 Since each element follows from the previous one in memory, there is no need to jump around between different memory locations. 
 This can be a very important point to take into consideration when choosing between a list and an array in your own real-world applications.
 
-# Pointer structures                                                       
+---
+
+### Pointer structures                                                       
 Contrary to arrays, pointer structures are lists of items that can be spread out in memory. 
 This is because each item contains one or more links to other items in the structure. 
 What type of links these are dependent on the type of structure we have. 
