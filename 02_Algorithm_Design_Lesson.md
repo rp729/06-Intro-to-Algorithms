@@ -63,3 +63,6 @@ We design an algorithm to get a solution of a given problem. A problem can be so
 
  
 Hence, many solution algorithms can be derived for a given problem. The next step is to analyze those proposed solution algorithms and implement the best suitable solution.
+
+
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/03_Big_O_notation_Lesson.md"> Continue to Next Topic </a>
