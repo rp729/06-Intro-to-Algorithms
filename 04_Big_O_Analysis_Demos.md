@@ -23,8 +23,8 @@ Prints the running times for problem sizes that double,
 
 using a single loop.
 
----
 **Expected Output:**
+
 ![image](https://user-images.githubusercontent.com/19671036/60616985-4df4f600-9d98-11e9-80ff-db47ee401f22.png)
 
 ---
@@ -32,43 +32,53 @@ using a single loop.
 **Example 2**
 
 Timing2.py
+
 ![image](https://user-images.githubusercontent.com/19671036/60617003-56e5c780-9d98-11e9-86d2-922cb9b93420.png)
 
 ---
 **Expected Output:**
+
 ![image](https://user-images.githubusercontent.com/19671036/60617041-6cf38800-9d98-11e9-88a0-34d0c456f8c2.png)
 
 ---
 
 **EXAMPLE 3:**
+
 ![image](https://user-images.githubusercontent.com/19671036/60617105-97dddc00-9d98-11e9-8f38-fcbfd1ce642e.png)
 
 ---
 **Expected Output:**
+
 ![image](https://user-images.githubusercontent.com/19671036/60617116-a3c99e00-9d98-11e9-9a8c-41d20793fc01.png)
 
 ---
 
 **Example 4:**
+
 ![image](https://user-images.githubusercontent.com/19671036/60617131-af1cc980-9d98-11e9-906b-9ef70afefe92.png)
 
 **Expected Output:**
+
 ![image](https://user-images.githubusercontent.com/19671036/60617149-bf34a900-9d98-11e9-9a1e-f488e9b49cb1.png)
  
  ---
 **Search for the Minimum Example**
+
 ![image](https://user-images.githubusercontent.com/19671036/60617222-e4291c00-9d98-11e9-9e12-9ea864aa530e.png)
 
 ---
 **Sequential Search of a List Example**
+
 ![image](https://user-images.githubusercontent.com/19671036/60617264-fc00a000-9d98-11e9-859c-92694ea4216d.png)
 
 ---
 **Binary Search Example:**
+
 ![image](https://user-images.githubusercontent.com/19671036/60617299-120e6080-9d99-11e9-9fcc-a4dd318da59c.png)
 
 ---
 **Comparing Data Items Example**
+
 ![image](https://user-images.githubusercontent.com/19671036/60617320-1cc8f580-9d99-11e9-8ba7-0fcfc7434aaf.png)
 
 ---
@@ -78,11 +88,13 @@ Timing2.py
 ### Basic Sort algorithms
 
 **Example 1:**
+
 ![image](https://user-images.githubusercontent.com/19671036/60617371-35d1a680-9d99-11e9-985c-5c3701d73885.png)
 
 ---
 
 **Selection Sort Algorithm**
+
 ![image](https://user-images.githubusercontent.com/19671036/60617391-42ee9580-9d99-11e9-8b8b-cc3bd69a9294.png)
 
 ---
@@ -91,6 +103,7 @@ Timing2.py
  ---
  
 **BUBBLE SORT ALGORITHM**
+
 ![image](https://user-images.githubusercontent.com/19671036/60617432-5a2d8300-9d99-11e9-98a7-244e41034f3f.png)
 
 ---
@@ -99,6 +112,7 @@ Timing2.py
 ---
 
 **Modified Bubble Sort function:**
+
 ![image](https://user-images.githubusercontent.com/19671036/60617492-7b8e6f00-9d99-11e9-888d-05bab253f342.png)
 
 ---
@@ -107,6 +121,7 @@ Timing2.py
 ---
 
 **Insertion Sort Algorithms**
+
 ![image](https://user-images.githubusercontent.com/19671036/60617537-8ea13f00-9d99-11e9-87ea-6240c2e67d56.png)
 
 ![image](https://user-images.githubusercontent.com/19671036/60617557-99f46a80-9d99-11e9-92fb-0fedd5714f07.png)
@@ -116,10 +131,12 @@ Timing2.py
 ### Quick Sort & Merge Sort Algorithms
 
 **Quicksort:**
+
 ![image](https://user-images.githubusercontent.com/19671036/60617571-a1b40f00-9d99-11e9-9e51-38febdb14eb5.png)
 
 ---
 **Implementation of Quicksort**
+
 ![image](https://user-images.githubusercontent.com/19671036/60617610-b0022b00-9d99-11e9-9ba8-b92037a77400.png)
 
 ---
