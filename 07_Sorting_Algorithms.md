@@ -214,3 +214,7 @@ print(l)
 **When the above code is executed, it produces the following result:**
 
 [2,11,19,27,30,31,45,121]
+
+---
+
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/08_Lists_Pointer_Structures.md"> Continue to Next Topic </a>
