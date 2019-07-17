@@ -205,7 +205,7 @@ big-O notation is an upper bound on the worst-case running time. Sometimes analy
 
 ---
 
-## 5
+**5**
 
 * While loops: With while loops you have to combine the analysis of a conditional with
     one of a for loop.
