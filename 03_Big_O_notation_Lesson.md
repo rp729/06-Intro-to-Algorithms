@@ -105,7 +105,7 @@ Now you should understand the What and the Why of big-O notation, as well as How
 describe something in big-O terms. But How do we get the bounds in the first place?? Let’s
 go through some examples.
 
-1. We consider all mathematical operations to be constant time (O( 1 )) operations. So
+* We consider all mathematical operations to be constant time (O( 1 )) operations. So
     the following functions are all considered to be O( 1 ) in complexity:
 
 ```
@@ -134,7 +134,7 @@ return 9*q
 
 ### 3
 
-2. Functions containing for loops that go through the whole input are generally O(n).
+* Functions containing for loops that go through the whole input are generally O(n).
     For example, above we defined a function mul that was constant-time as it used the
     built-in Python operator *. If we define our own multiplication function that doesn’t
     use *, it will not be O( 1 ) anymore:
@@ -152,7 +152,7 @@ Here, this function is O(y) - the way we’ve defined it is dependent on the siz
 input y, because we execute the for loop y times, and each time through the for loop
 we execute a constant-time operation.
 ```
-3. Consider the following code:
+* Consider the following code:
 
 ```
 def factorial(n):
@@ -165,7 +165,7 @@ return num
 ```
 What is the big-O bound on factorial?
 ```
-4. Consider the following code:
+* Consider the following code:
 
 ```
 def factorial2(n):
@@ -187,7 +187,7 @@ What is the big-O bound on factorial2?
 
 ### 4
 
-5. The complexity of conditionals depends on what the condition is. The complexity
+* The complexity of conditionals depends on what the condition is. The complexity
     of the condition can be constant, linear, or even worse - it all depends on what the
     condition is.
 
@@ -236,7 +236,7 @@ function is O(nm).
 
 ## 5
 
-6. While loops: With while loops you have to combine the analysis of a conditional with
+* While loops: With while loops you have to combine the analysis of a conditional with
     one of a for loop.
 
 ```
@@ -273,10 +273,7 @@ means “Python written in the C language”. You are actually using CPython. (2
 If you are asked to find the worst-case complexity, you want to use the Worst Case
 bounds. (3) Note that operations such as slicing and copying aren’t O( 1 ) operations.
 ```
-7. Nested for loops - anytime you’re dealing with nested loops, work from the inside out.
-    Figure out the complexity of the innermost loop, then go out a level and multiply (this
-    is similar to the second piece of code in Example 5). So, what is the time complexity
-    of this code fragment, if we let n = |z|?
+* Nested for loops - anytime you’re dealing with nested loops, work from the inside out. Figure out the complexity of the innermost loop, then go out a level and multiply (this is similar to the second piece of code in Example 5). So, what is the time complexity of this code fragment, if we let n = |z|?
 
 ```
 result = 0
@@ -284,15 +281,14 @@ result = 0
 for i in range(z):
 for j in range(z):
 result += (i*j)
+
 ```
 
 ---
 
 ### 6
 
-8. Recursion. Recursion can be tricky to figure out; think of recursion like a tree. If the
-    tree has lots of branches, it will be more complex than one that has very few branches.
-    Consider recursive factorial:
+Recursion. Recursion can be tricky to figure out; think of recursion like a tree. If the tree has lots of branches, it will be more complex than one that has very few branches.  Consider recursive factorial:
 
 ```
 def r_factorial(n):
@@ -362,4 +358,4 @@ in maths : D
 
 ---
 
-<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/04_Big_O_Analysis_Demos.md"> Continue to Next topic </a>
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master 04_Big_O_Analysis_Demos.md"> Continue to Next topic </a>
