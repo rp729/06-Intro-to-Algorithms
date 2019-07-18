@@ -1,11 +1,21 @@
-# Create a  Program to utilize a Doubly Linked List and involve Insertion, Deletion & Display Operations
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md"> Return to TOC </a>
+
+---
+
+## Linked List Performance Lab
+
+---
+
+**Create a Program to utilize a Doubly Linked List and involve Insertion, Deletion & Display Operations**
 
 This is a Python program to create a doubly linked list and implement insertion, deletion and display operations on the list.
 
-##  Problem Description
+**Problem Description**
+
 The program creates a doubly linked list and presents the user with a menu to perform various operations on the list.
 
-## Problem Solution
+**Problem Solution**
+
 1. Create a class Node with instance variables data and next.
 2. Create a class DoublyLinkedList with instance variables first and last.
 3. The variable first points to the first element in the doubly linked list while last points to the last element.
@@ -16,3 +26,11 @@ The program creates a doubly linked list and presents the user with a menu to pe
 8. The method remove takes a node as argument and removes it from the list.
 9. The method display traverses the list from the first node and prints the data of each node.
 10. Create an instance of DoublyLinkedList and present the user with a menu to perform operations on the list.
+
+---
+
+**Continue to Singly linked List Performance Lab**
+
+---
+
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/13_Singly_Linked_List_Lab.md"> Continue to Singly Linked List Performance Lab </a>
