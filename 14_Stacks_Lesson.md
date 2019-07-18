@@ -1,4 +1,8 @@
-# Stacks
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md"> Return to TOC </a>
+
+---
+
+## Stacks
 A stack is a data structure that is often likened to a stack of plates. 
 If you have just washed a plate, you put it on top of the stack. When you need a plate, 
 you take it off the top of the stack. 
@@ -25,7 +29,8 @@ When the code jumps into the function, the values for a, b, c, d will be popped 
 
 ![image](https://user-images.githubusercontent.com/19671036/60811834-b73c8680-a155-11e9-8842-f0a8b5bcbcd0.png)
 
-# Stack implementation
+**Stack implementation**
+
 Now let us study an implementation of a stack in Python. We start off by creating a node class, just as we did in the previous chapter with lists:
 
 ![image](https://user-images.githubusercontent.com/19671036/60815909-30d87280-a15e-11e9-9da0-105f5b9a96e5.png)
@@ -36,7 +41,8 @@ Now let us look at the stack class. It starts off similar to a singly linked lis
 
 ![image](https://user-images.githubusercontent.com/19671036/60815974-49e12380-a15e-11e9-8441-90d82d5d0c18.png)
 
-# Push operation
+**Push operation**
+
 The push operation is used to add an element to the top of the stack. Here is an implementation:
 
 ![image](https://user-images.githubusercontent.com/19671036/60816065-78f79500-a15e-11e9-9987-6ec1a8ebb331.png)
@@ -50,7 +56,8 @@ In a scenario where we have an existing stack, we move self.top so that it point
 ![image](https://user-images.githubusercontent.com/19671036/60816155-b4925f00-a15e-11e9-92d5-193260da1302.png)
 
 
-# Pop operation
+**Pop operation**
+
 Now we need a pop method to remove the top element from the stack. As we do so, we need to return the topmost element as well. We will make the stack return None if there are no more elements:
 
 
@@ -68,7 +75,12 @@ Removing such a node results in self.top pointing to None:
 
 ![image](https://user-images.githubusercontent.com/19671036/60816906-4a7ab980-a160-11e9-97df-ed602a2735a5.png)
 
-# Peek
+**Peek**
+
 As we said earlier, we could also add a peek method. This will just return the top of the stack without removing it from the stack, allowing us to look at the top element without changing the stack itself. This operation is very straightforward. If there is a top element, return its data, otherwise return None (so that the behavior of peek matches that of pop):
 
 ![image](https://user-images.githubusercontent.com/19671036/60817002-71d18680-a160-11e9-821e-282f24e57f95.png)
+
+---
+
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/15_Stack%20Implementation_Lesson.md" > Continue to Next Topic </a>
