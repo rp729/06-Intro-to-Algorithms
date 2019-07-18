@@ -29,8 +29,4 @@ The program creates a doubly linked list and presents the user with a menu to pe
 
 ---
 
-
-
----
-
 <a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/13_Singly_Linked_List_Lab.md"> **Continue to Singly Linked List Performance Lab** </a>
