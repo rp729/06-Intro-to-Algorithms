@@ -2,13 +2,13 @@
 
 ---
 
-# Objectives 
+## Objectives 
 This topic provides the student with knowledge and skills on:
  1. ALgorithm Design
  2. Characteristics of an Algorithm
  3. How to write and algorithm
  
-# Algorithm Design
+**Algorithm Design**
 
 Algorithm is a step-by-step procedure, which defines a set of instructions to be executed in a certain order to get the desired output. Algorithms are generally created independent of underlying languages, i.e. an algorithm can be implemented in more than one programming language.
 
@@ -20,8 +20,7 @@ From the data structure point of view, following are some important categories o
 - **Update**  − Algorithm to update an existing item in a data structure.
 - **Delete**  − Algorithm to delete an existing item from a data structure.
 
-##
-# Characteristics of an Algorithm
+**Characteristics of an Algorithm**
 
 Not all procedures can be called an algorithm. An algorithm should have the following characteristics −
 
@@ -32,8 +31,7 @@ Not all procedures can be called an algorithm. An algorithm should have the foll
 - **Feasibility**  − Should be feasible with the available resources.
 - **Independent**  − An algorithm should have step-by-step directions, which should be independent of any programming code.
 
-##
-# How to Write an Algorithm?
+**How to Write an Algorithm?**
 
 There are no well-defined standards for writing algorithms. Rather, it is problem and resource dependent. Algorithms are never written to support a particular programming code.
 
@@ -41,7 +39,7 @@ As we know that all programming languages share basic code constructs like loops
 
 We write algorithms in a step-by-step manner, but it is not always the case. Algorithm writing is a process and is executed after the problem domain is well-defined. That is, we should know the problem domain, for which we are designing a solution.
 
-### Example
+**Example**
 
 Let&#39;s try to learn algorithm-writing by using an example.
 
