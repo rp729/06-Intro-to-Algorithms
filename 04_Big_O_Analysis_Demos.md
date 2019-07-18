@@ -47,7 +47,13 @@ Timing2.py
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/19671036/60617041-6cf38800-9d98-11e9-88a0-34d0c456f8c2.png)
+|PROBLEM SIZE|SECONDS|
+| :---: | :---: |
+|1000|0.387|
+|2000|1.581|
+|4000|6.463|
+|8000|25.702|
+|16000|102.666|
 
 ---
 
@@ -57,7 +63,13 @@ Timing2.py
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/19671036/60617116-a3c99e00-9d98-11e9-9a8c-41d20793fc01.png)
+|PROBLEM SIZE|SECONDS|
+| :---: | :---: |
+|1000|1000000|
+|2000|4000000|
+|4000|16000000|
+|8000|64000000|
+|16000|256000000|
 
 ---
 
@@ -67,7 +79,13 @@ Timing2.py
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/19671036/60617149-bf34a900-9d98-11e9-9a1e-f488e9b49cb1.png)
+|PROBLEM SIZE|CALLS|
+| :---: | :---: |
+|2|1|
+|4|5|
+|8|41|
+|16|1973|
+|32|4356617|
  
  ---
  
