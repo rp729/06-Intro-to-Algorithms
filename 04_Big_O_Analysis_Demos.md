@@ -29,7 +29,13 @@ using a single loop.
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/19671036/60616985-4df4f600-9d98-11e9-80ff-db47ee401f22.png)
+|Problem Size|Seconds|
+|   :---:    | :---: |
+|10000000|3.8|
+|20000000|7.591|
+|40000000|15.352|
+|80000000|30.697|
+|160000000|61.631
 
 ---
 
