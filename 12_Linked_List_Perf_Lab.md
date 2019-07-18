@@ -2,7 +2,7 @@
 
 ---
 
-## Linked List Performance Lab
+## Doubly Linked List Performance Lab
 
 ---
 
