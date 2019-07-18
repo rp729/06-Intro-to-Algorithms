@@ -1,10 +1,21 @@
-# Create a Program to Check whether a Singly Linked List is a Palindrome
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md"> Return to TOC </a>
+
+---
+
+## Singly Linked List Lab
+
+---
+
+**Create a Program to Check whether a Singly Linked List is a Palindrome**
+
 This is a Python program to check whether a singly linked list is a palindrome.
 
-## Problem Description
+**Problem Description**
+
 The program creates a linked list using data items input from the user and determines whether it is a palindrome.
 
-## Problem Solution
+**Problem Solution**
+
 1. Create a class Node with instance variables data and next.
 2. Create a class LinkedList with instance variables head and last_node.
 3. The variable head points to the first element in the linked list while last_node points to the last.
@@ -13,3 +24,7 @@ The program creates a linked list using data items input from the user and deter
 6. Define a function is_palindrome which returns True if the linked list passed to it is a palindrome.
 7. The function is_palindrome iterates through the linked list from the start and the last node towards the middle to check if the list is a palindrome.
 8. Create an instance of LinkedList, append data to it and determine whether it is a palindrome.
+
+---
+
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/14_Stacks_Lesson.md"> Continue to Next Topic </a>
