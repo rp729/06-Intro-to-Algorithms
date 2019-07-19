@@ -1,10 +1,17 @@
-# CASE STUDY: SIMULATING A SUPERMARKET CHECKOUT LINE
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md"> Return to TOC </a>
+
+---
+
+## CASE STUDY: SIMULATING A SUPERMARKET CHECKOUT LINE
+
 In this case study, you develop a program to simulate supermarket checkout stations. To keep the program simple, some important factors found in a realistic supermarket situation have been omitted; you’re asked to add them back as part of the exercises.
 
-## Request
+**Request**
+
 Write a program that allows the user to predict the behavior of a supermarket checkout line under various conditions.
 
-## Analysis
+**Analysis**
+
 For the sake of simplicity, the following restrictions are imposed:
 
 Image There is just one checkout line, staffed by one cashier.
@@ -39,7 +46,8 @@ Number of customers left in queue: 1
 Average time customers spend
 Waiting to be served: 2.38
 ```
-# Classes and Responsibilities
+**Classes and Responsibilities**
+
 As far as classes and their overall responsibilities are concerned, the system is divided into a main function and several model classes. The main function is responsible for interacting with the user, validating the three input values, and communicating with the model. The design and implementation of this function require no comment, and the function’s code is not presented. The classes in the model are listed in the following table:
 
 ![image](https://user-images.githubusercontent.com/19671036/60821694-ab5abf80-a169-11e9-8b20-69ad082d8d6b.png)
@@ -56,25 +64,22 @@ You can now design and implement each class in turn.
 
 Because the checkout situation has been restricted, the design of the class MarketModel is fairly simple. The constructor does the following:
 
-1. Saves the inputs—probability of new arrival, length of simulation, and average time per customer.
-
-2. Creates the single cashier.
+* Saves the inputs—probability of new arrival, length of simulation, and average time per customer.
+* Creates the single cashier.
 
 The only other method needed is runSimulation. This method runs the abstract clock that drives the checkout process. On each tick of the clock, the method does three things:
 
-1. Asks the Customer class to generate a new customer, which it may or may not do, depending on the probability of a new arrival and the output of a random number generator.
-
-2. If a new customer is generated, sends the new customer to the cashier.
-
-3. Tells the cashier to provide a unit of service to the current customer.
+* Asks the Customer class to generate a new customer, which it may or may not do, depending on the probability of a new arrival and the output of a random number generator.
+* If a new customer is generated, sends the new customer to the cashier.
+* Tells the cashier to provide a unit of service to the current customer.
 
 When the simulation ends, the runSimulation method returns the cashier’s results to the view. Here is the pseudocode for the method:
 
 ![image](https://user-images.githubusercontent.com/19671036/60822072-61bea480-a16a-11e9-87d7-c40652812d54.png)
 
-Note that the pseudocode algorithm asks the Customer class for an instance of itself. Because it is only probable that a customer will arrive at any given minute, occasionally a customer will not be generated. Rather than code the logic for making this choice at this level, you can bury it in a class method in the Customer class. From the model, the Customer class method generateCustomer receives the probability of a new customer arriving, the current time, and the average time needed per customer. The method uses this information to determine whether to create a customer and, if it does, how to initialize the customer. The method returns either the new Customer object or the value None. The syntax of running a class method is just like that of an instance method, except that the name to the left of the dot is the class’s name.
+**Note:** The pseudocode algorithm asks the Customer class for an instance of itself. Because it is only probable that a customer will arrive at any given minute, occasionally a customer will not be generated. Rather than code the logic for making this choice at this level, you can bury it in a class method in the Customer class. From the model, the Customer class method generateCustomer receives the probability of a new customer arriving, the current time, and the average time needed per customer. The method uses this information to determine whether to create a customer and, if it does, how to initialize the customer. The method returns either the new Customer object or the value None. The syntax of running a class method is just like that of an instance method, except that the name to the left of the dot is the class’s name.
 
-Here is a complete listing of the class MarketModel:
+**Complete listing of the class MarketModel:**
 
 ![image](https://user-images.githubusercontent.com/19671036/60822161-81ee6380-a16a-11e9-9c1a-e3916a1458d8.png)
 
@@ -90,11 +95,11 @@ The method serveCustomers handles the cashier’s activity during one clock tick
 
 ![image](https://user-images.githubusercontent.com/19671036/60822289-c8dc5900-a16a-11e9-8d48-4cde826a2154.png)
 
-Here is pseudocode for the method serveCustomers:
+**Pseudocode for the method serveCustomers:**
 
 ![image](https://user-images.githubusercontent.com/19671036/60822331-df82b000-a16a-11e9-8d60-7912fffb9070.png)
 
-Here is the code for the Cashier class:
+**Code for the Cashier class:**
 
 ![image](https://user-images.githubusercontent.com/19671036/60822431-0b9e3100-a16b-11e9-86cc-c45a0db22de3.png)
 ![image](https://user-images.githubusercontent.com/19671036/60822462-1c4ea700-a16b-11e9-9b12-dd51c09e2adc.png)
@@ -111,10 +116,13 @@ The remaining method, generateCustomer, is a class method. It expects as argumen
 
 ![image](https://user-images.githubusercontent.com/19671036/60822548-46a06480-a16b-11e9-85d2-9eb491e7c5cc.png)
 
-Here is the code for the Customer class:
+**Code for the Customer class:**
 
 ![image](https://user-images.githubusercontent.com/19671036/60822595-5ddf5200-a16b-11e9-9e65-0f74ea6e6774.png)
 
+---
+
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/19_Queue_Demo_lab_2.md" > Continue to Emergency Room Case Study </a>
 
 
 
