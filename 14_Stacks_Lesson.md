@@ -49,7 +49,7 @@ The push operation is used to add an element to the top of the stack. Here is an
 
 In the following figure, there is no existing node after creating our new node. Thus self.top will point to this new node. The else part of the if statement guarantees that this happens:
 
-![image](https://user-images.githubusercontent.com/19671036/60816105-97f62700-a15e-11e9-86e1-38afda93ba2f.png)
+![](/06_Intro-to-Algorithms/Assets/Nodes.png)
 
 In a scenario where we have an existing stack, we move self.top so that it points to the newly created node. The newly created node must have its next pointer, pointing to the node that used to be the top node on the stack:
 
