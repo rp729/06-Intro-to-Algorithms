@@ -23,7 +23,7 @@ Stacks are actually also used to pass data between functions. Say you have the f
 
 What is going to happen is that 14, 'eggs', 'ham' and 'spam' will be pushed onto the stack, one at a time:
 
-![image](https://user-images.githubusercontent.com/19671036/60811669-66c52900-a155-11e9-9e19-34dc6f30f5e2.png)
+![](/Assets/Node0.png)
 
 When the code jumps into the function, the values for a, b, c, d will be popped off the stack. The spam element will be popped off first and assigned to d, then "ham" will be assigned to c, and so on:
 
@@ -53,7 +53,7 @@ In the following figure, there is no existing node after creating our new node. 
 
 In a scenario where we have an existing stack, we move self.top so that it points to the newly created node. The newly created node must have its next pointer, pointing to the node that used to be the top node on the stack:
 
-![image](https://user-images.githubusercontent.com/19671036/60816155-b4925f00-a15e-11e9-92d5-193260da1302.png)
+![](/Assets/Node2.png)
 
 
 **Pop operation**
@@ -65,15 +65,15 @@ Now we need a pop method to remove the top element from the stack. As we do so, 
 
 The thing to pay attention to here is the inner if statement. If the top node has its next attribute pointing to another node, then we must set the top of the stack to now point to that node:
 
-![image](https://user-images.githubusercontent.com/19671036/60816827-2323ec80-a160-11e9-8fa3-79790ed7c9e0.png)
+![](/Assets/Node3.png)
 
 When there is only one node in the stack, the pop operation will proceed as follows:
 
-![image](https://user-images.githubusercontent.com/19671036/60816870-3a62da00-a160-11e9-8481-e3e5ea91987a.png)
+![](/Assets/Node4.png)
 
 Removing such a node results in self.top pointing to None:
 
-![image](https://user-images.githubusercontent.com/19671036/60816906-4a7ab980-a160-11e9-97df-ed602a2735a5.png)
+![](/Assets/Node5.png)
 
 **Peek**
 
