@@ -1,7 +1,16 @@
-# Bracket-matching application
-Now let us look at an example of how we can use our stack implementation. 
-We are going to write a little function that will verify whether a statement containing brackets--(, [, or {--is balanced, that is, 
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md"> Return to TOC </a>
+
+---
+
+## Bracket-matching application
+
+---
+
+**Now let's look at an example of how we can use our stack implementation.**
+
+* We are going to write a little function that will verify whether a statement containing brackets--(, [, or {--is balanced, that is, 
 whether the number of closing brackets matches the number of opening brackets. 
+
 It will also ensure that one pair of brackets really is contained in another:
 
 ![image](https://user-images.githubusercontent.com/19671036/60817677-c0335500-a161-11e9-9172-a876a632f8b9.png)
@@ -17,3 +26,7 @@ Only the first of the three statements should match. And when we run the code, w
 ![](/Assets/Terminal.png)
 
 True, False, False. The code works. In summary, the push and pop operations of the stack data structure attract a O(1). The stack data structure is simply enough but is used to implement a whole range of functionality in the real world. The back and forward buttons on the browser are made possible by stacks. To be able to have undo and redo functionality in word processors, stacks are also used.
+
+---
+
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/16_Queue_Lesson.md"> Continue to Next Topic </a>
