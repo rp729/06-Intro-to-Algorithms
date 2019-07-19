@@ -1,17 +1,22 @@
-# CASE STUDY: AN EMERGENCY ROOM SCHEDULER
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md"> Return to TOC </a>
+
+---
+
+## CASE STUDY: AN EMERGENCY ROOM SCHEDULER
+
 As anyone who has been to a busy hospital emergency room knows, people must wait for service. Although everyone might appear to be waiting in the same place, they are actually in separate groups and scheduled according to the seriousness of their condition. This case study develops a program that performs this scheduling with a priority queue.
 
-Request
+**Request**
+
 Write a program that allows a supervisor to schedule treatments for patients coming into a hospital’s emergency room. Assume that, because some patients are in more critical condition than others, patients are not treated on a strictly first-come, first-served basis, but are assigned a priority when admitted. Patients with a high priority receive attention before those with a lower priority.
 
-Analysis
+**Analysis**
+
 Patients come into the emergency room in one of three conditions. In order of priority, the conditions are ranked as follows:
 
-1. Critical
-
-2. Serious
-
-3. Fair
+* Critical
+* Serious
+* Fair
 
 When the user selects the Schedule option, the program allows the user to enter a patient’s name and condition, and the patient is placed in line for treatment according to the severity of his condition. When the user selects the Treat Next Patient option, the program removes and displays the patient first in line with the most serious condition. When the user selects the Treat All Patients option, the program removes and displays all patients in order from patient to serve first to patient to serve last.
 
@@ -28,7 +33,8 @@ The application consists of a view class, called ERView, and a set of model clas
 
 ![image](https://user-images.githubusercontent.com/19671036/60824111-a2b8b800-a16e-11e9-87ec-6c4e46fe1baf.png)
 
-Design and Implementation
+**Design and Implementation**
+
 The Patient and Condition classes maintain a patient’s name and condition. You can compare (according to their conditions) and view them as strings. Here is the code for these two classes:
 
 ![image](https://user-images.githubusercontent.com/19671036/60824173-bebc5980-a16e-11e9-9ff1-b18918d06fcc.png)
@@ -41,5 +47,10 @@ The class ERView uses a typical menu-driven loop. You structure the code using s
 
 The class ERModel uses a priority queue to schedule the patients. Its implementation is left as a programming project for you.
 
-# STUDENT PERFORMANCE LAB
-Complete the emergency room scheduler application as described in the case study.
+**STUDENT PERFORMANCE LAB**
+
+* Complete the emergency room scheduler application as described in the case study.
+
+---
+
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/20_Queue_Perf_Lab.md" > Continue to Queue Performance Lab </a>
