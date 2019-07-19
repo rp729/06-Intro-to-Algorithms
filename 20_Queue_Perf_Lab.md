@@ -17,4 +17,4 @@ The simulator’s interface asks the user to enter the average number of minutes
 
 ---
 
-<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/21_Trees_Lesson.md" > Continue to Queue Performance Lab </a>
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/21_Trees_Lesson.md" > Continue to Next Topic </a>
