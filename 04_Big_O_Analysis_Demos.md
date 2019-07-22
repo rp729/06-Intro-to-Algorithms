@@ -331,7 +331,7 @@ def insertionSort(lyst):
 
 ---
 
-# Quick Sort & Merge Sort Algorithms
+### Quick Sort & Merge Sort Algorithms
 
 ---
 
