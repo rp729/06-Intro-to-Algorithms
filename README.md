@@ -2,10 +2,10 @@
 
 ---
 
-# Intro-to-Algorithms
+## Intro-to-Algorithms
 In this section, the Student will learn to implement complex data structures and algorithms using Python
 
-# The Student will learn Key Features:
+## The Student will learn Key Features:
 1. Understand the analysis and design of fundamental Python data structures
 2. Explore advanced Python concepts such as Big O notation and asymptotic analysis.
 3. Learn functional and reactive implementations of traditional data structures
