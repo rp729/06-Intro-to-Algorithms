@@ -130,8 +130,6 @@ for count in range(5):
     
 ```
 
-![image](https://user-images.githubusercontent.com/19671036/60617131-af1cc980-9d98-11e9-906b-9ef70afefe92.png)
-
 **Expected Output:**
 
 |PROBLEM SIZE|CALLS|
@@ -161,9 +159,6 @@ def index0fmin(lyst):
         currentIndex += 1
     return minIndex
 ````
-
-![image](https://user-images.githubusercontent.com/19671036/60617222-e4291c00-9d98-11e9-9e12-9ea864aa530e.png)
-
 ---
 
 **Sequential Search of List**
@@ -177,9 +172,7 @@ def sequentialSearch(target, lyst):
             return position
         position += 1
     return -1
-````
-
-![image](https://user-images.githubusercontent.com/19671036/60617264-fc00a000-9d98-11e9-859c-92694ea4216d.png)
+```
 
 ---
 
@@ -199,8 +192,6 @@ def binarySearch(target, sortedLyst):
             left = midpoint + 1
         return -1
 ```
-
-![image](https://user-images.githubusercontent.com/19671036/60617299-120e6080-9d99-11e9-9fcc-a4dd318da59c.png)
 
 ---
 
@@ -241,12 +232,6 @@ True
 
 * You can now place the accounts in a list and sort them by name.
 
-
-![image](https://user-images.githubusercontent.com/19671036/60617320-1cc8f580-9d99-11e9-8ba7-0fcfc7434aaf.png)
-
-
-![image](https://user-images.githubusercontent.com/19671036/60617339-27838a80-9d99-11e9-89df-8a5a8e338369.png)
-
 ---
 
 ### Sort Algorithms
@@ -264,14 +249,12 @@ def swap(lyst, i, j):
     lyst[i] = lyst[j]
     lyst[j] = temp
 ```    
-    
-![image](https://user-images.githubusercontent.com/19671036/60617371-35d1a680-9d99-11e9-985c-5c3701d73885.png)
-
 ---
 
 **Selection Sort Algorithm**
 
 ![image](https://user-images.githubusercontent.com/19671036/60617391-42ee9580-9d99-11e9-8b8b-cc3bd69a9294.png)
+
 ```
 def selectionSort(lyst):
     i =0 
@@ -285,9 +268,7 @@ def selectionSort(lyst):
         if minIndex != 1:        # Exchange if needed
             swap(lyst, minIndex, i)
         i += 1
-````        
-
-![image](https://user-images.githubusercontent.com/19671036/60617418-4eda5780-9d99-11e9-9d1a-20d8501050a9.png)
+```
  
  ---
  
@@ -304,11 +285,9 @@ def bubbleSort(lyst):
             if lyst[i] < lyst[i - 1]:  # Exchange if needed
                 swap(lyst, i, i - 1)
             i += 1
-        n -+ 1
+        n -= 1
 ```        
         
-![image](https://user-images.githubusercontent.com/19671036/60617455-6addf900-9d99-11e9-9a18-8d3672d60a8d.png)
-
 ---
 
 **Modified Bubble Sort function:**
@@ -327,10 +306,6 @@ def bubbleSortWithTweak(lyst):
         if not swapped: return         # Return if no swaps
         n -= 1
 ```        
-        
-![image](https://user-images.githubusercontent.com/19671036/60617492-7b8e6f00-9d99-11e9-888d-05bab253f342.png)
-
-![image](https://user-images.githubusercontent.com/19671036/60617513-8517d700-9d99-11e9-8e66-f9458a2883c5.png)
 
 ---
 
@@ -351,8 +326,6 @@ def insertionSort(lyst):
        lyst[j + 1] = itemToInsert
        i += 1
 ```       
-
-![image](https://user-images.githubusercontent.com/19671036/60617537-8ea13f00-9d99-11e9-87ea-6240c2e67d56.png)
 
 ![image](https://user-images.githubusercontent.com/19671036/60617557-99f46a80-9d99-11e9-92fb-0fedd5714f07.png)
 
