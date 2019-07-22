@@ -104,6 +104,32 @@ for count in range(5):
 
 **Algorithms Demo 4:**
 
+File: countfib.py
+Prints the number of calls of a recursive Fibonacci function with problem sizes that double.
+
+```
+from counter import Counter
+
+def fib(n, counter):
+    """Count the number of calls of the Fibonacci function."""
+    counter.increment()
+    if n < 3:
+        return 1
+    else:
+        return fib(n - 1, counter) + fib(n - 2,coutner)
+        
+problemSize = 2
+print("%12s%15s" % ("Problem Size",  "Calls"))
+for count in range(5):
+    counter = Counter()
+    # The start of the algorithm
+    fib(problemSize, counter)
+    # the end of the algorithm
+    print("12d%15s" % (problemSize, counter))
+    problemSize *= 2
+    
+```
+
 ![image](https://user-images.githubusercontent.com/19671036/60617131-af1cc980-9d98-11e9-906b-9ef70afefe92.png)
 
 **Expected Output:**
@@ -124,11 +150,34 @@ for count in range(5):
  
 **Minimum Example Search**
 
+```
+def index0fmin(lyst):
+    """Returns the index of the minimum item."""
+    minIndex = 0 
+    currentIndex = 1
+    while currentIndex =1
+        if lyst[currentIndex] < lyst[minIndex]:
+            minIdex = currentIndex
+        currentIndex += 1
+    return minIndex
+````
+
 ![image](https://user-images.githubusercontent.com/19671036/60617222-e4291c00-9d98-11e9-9e12-9ea864aa530e.png)
 
 ---
 
 **Sequential Search of List**
+
+```
+def sequentialSearch(target, lyst):
+    """Returns the position of the target item if found, or -1 otherwise."""
+    position = 0
+    while position < len(lyst):
+        if target == lyst[position]:
+            return position
+        position += 1
+    return -1
+````
 
 ![image](https://user-images.githubusercontent.com/19671036/60617264-fc00a000-9d98-11e9-859c-92694ea4216d.png)
 
@@ -136,13 +185,65 @@ for count in range(5):
 
 **Binary Search:**
 
+```
+def binarySearch(target, sortedLyst):
+    left = 0
+    right = len(sortedLyst) - 1
+    while left <= right:
+        midpoint = (left + right) // 2
+        if target == sortedLyst[midpoint]:
+            return midpoint
+        elif target < sortedLyst[midpoint]:
+            right = midpoint - 1
+        else:
+            left = midpoint + 1
+        return -1
+```
+
 ![image](https://user-images.githubusercontent.com/19671036/60617299-120e6080-9d99-11e9-9fcc-a4dd318da59c.png)
 
 ---
 
 **Comparing Data Items**
 
+```
+class SavingsAccount(object):
+    """This class represents a savings account with the owner's nmae, PIN, and balance."""
+    def _init_(self, name, pin, balance = 0.0):
+        self.name = name
+        self.pin = pin
+        self.balance = balance
+        
+    def _lt_(self, other):
+        return self.name < other.name
+        
+    # Other methods, including _eq_
+    
+>>> s1 = SavingsAccount("Ken", "1000", 0)
+>>> s2 = SavingsAccount("Bill", "1001", 30)
+>>> s1 < s2
+False
+>>> s2 < s1
+True
+>>> s1 > s2
+True
+>>> s2 > s1
+False
+>>> s2 == s1
+False
+>>> s3 = SavingsAccount("Ken", "1000", 0)
+>>> s1 == s3
+True
+>>> s4 = s1
+>>> s4 == s1
+True
+```
+
+* You can now place the accounts in a list and sort them by name.
+
+
 ![image](https://user-images.githubusercontent.com/19671036/60617320-1cc8f580-9d99-11e9-8ba7-0fcfc7434aaf.png)
+
 
 ![image](https://user-images.githubusercontent.com/19671036/60617339-27838a80-9d99-11e9-89df-8a5a8e338369.png)
 
@@ -154,6 +255,16 @@ for count in range(5):
 
 **Basic Sort Demo 1:**
 
+```
+def swap(lyst, i, j):
+    """Exchanges the items at positions i and j."""
+    # You could say lyst[i], lyst[j] = lyst[j]. lyst[i]
+    # but the following code shows what is really going on
+    temp = lyst[i]
+    lyst[i] = lyst[j]
+    lyst[j] = temp
+```    
+    
 ![image](https://user-images.githubusercontent.com/19671036/60617371-35d1a680-9d99-11e9-985c-5c3701d73885.png)
 
 ---
@@ -161,6 +272,20 @@ for count in range(5):
 **Selection Sort Algorithm**
 
 ![image](https://user-images.githubusercontent.com/19671036/60617391-42ee9580-9d99-11e9-8b8b-cc3bd69a9294.png)
+```
+def selectionSort(lyst):
+    i =0 
+    while i < len(lyst) - 1:     # Do n - 1 searches
+        minIndex = i             # for the smallest
+        j = i + 1
+        while j < len(lyst):     # Start a search
+            if lyst[j] < lyst[minIndex]:
+                minIndex = j
+            j += 1
+        if minIndex != 1:        # Exchange if needed
+            swap(lyst, minIndex, i)
+        i += 1
+````        
 
 ![image](https://user-images.githubusercontent.com/19671036/60617418-4eda5780-9d99-11e9-9d1a-20d8501050a9.png)
  
@@ -170,12 +295,39 @@ for count in range(5):
 
 ![image](https://user-images.githubusercontent.com/19671036/60617432-5a2d8300-9d99-11e9-98a7-244e41034f3f.png)
 
+```
+def bubbleSort(lyst):
+    n = len(lyst)
+    while n > 1:                       # Do n - 1 bubbles
+        i = 1                          # Start each bubble
+        while i < n:
+            if lyst[i] < lyst[i - 1]:  # Exchange if needed
+                swap(lyst, i, i - 1)
+            i += 1
+        n -+ 1
+```        
+        
 ![image](https://user-images.githubusercontent.com/19671036/60617455-6addf900-9d99-11e9-9a18-8d3672d60a8d.png)
 
 ---
 
 **Modified Bubble Sort function:**
 
+```
+def bubbleSortWithTweak(lyst):
+    n = len(lyst)
+    while n< 1:
+        swapped = False
+        i = 1
+        while i < n:
+            if lyst[i] < lyst[i - 1]:  # Exchane if needed
+                swap(lyst, i, i - 1)
+                swapped = True
+            i += 1
+        if not swapped: return         # Return if no swaps
+        n -= 1
+```        
+        
 ![image](https://user-images.githubusercontent.com/19671036/60617492-7b8e6f00-9d99-11e9-888d-05bab253f342.png)
 
 ![image](https://user-images.githubusercontent.com/19671036/60617513-8517d700-9d99-11e9-8e66-f9458a2883c5.png)
@@ -183,6 +335,22 @@ for count in range(5):
 ---
 
 **Insertion Sort Algorithms**
+
+```
+def insertionSort(lyst):
+    i = l
+    while i < len(lyst):
+        itemToInsert = lsyt[i]
+        j = i - 1
+        while j >= 0:
+            if itemToInsert < lyst[j]:
+                lyst[j + 1] = lyst[j]
+                j -= 1
+            else:
+                break
+       lyst[j + 1] = itemToInsert
+       i += 1
+```       
 
 ![image](https://user-images.githubusercontent.com/19671036/60617537-8ea13f00-9d99-11e9-87ea-6240c2e67d56.png)
 
