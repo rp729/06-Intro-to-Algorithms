@@ -49,12 +49,9 @@ Let&#39;s try to learn algorithm-writing by using an example.
 Step 2 - get values of a & b  
 Step 3 - c &larr; a + b  
 Step 4 - display c  
-Step 5 - STOP  **
+Step 5 - STOP**
 
- ![image](https://user-images.githubusercontent.com/19671036/60600339-92bb6580-9d75-11e9-9b34-4436f475c841.png)
-
-
-Algorithms tell the programmers how to code the program. Alternatively, the algorithm can be written as –
+ Algorithms tell the programmers how to code the program. Alternatively, the algorithm can be written as –
 
 
 
