@@ -343,14 +343,65 @@ def insertionSort(lyst):
 
 **Implementation of Quicksort**
 
-![image](https://user-images.githubusercontent.com/19671036/60617610-b0022b00-9d99-11e9-9ba8-b92037a77400.png)
+```
+def quicksort(lyst):
+    quicksortHelper(lyst, 0, len(lyst) - 1)
+    
+def quicksortHelper(lyst, left, right):
+    if left < right:
+        pivotLocation = partition(lyst, left, right)
+        quicksortHelper(lyst, left, pivotlLocation - 1)
+        quicksortHelper(lyst, pivotLocation + 1, right)
+        
+def partition(lyst, left, right):
+    # Find the pivot and exchange it with the last item
+    middle = (left + right) // 2
+    pivot = lyst[middle]
+    lyst[middle] = lyst[right]
+    lyst[right] = pivot
+    # Set boundary point to first position
+    boundry = left
+    # Move items less than pivot to the left
+    for index in range(left, right):
+        if lyst[index] < pivot:
+            swap(lyst, index, boundary)
+            boundary += 1
+    # Exchange the pivot item and the boundary item
+    swap (lyst, right, boundary)
+    return boundary
+    
+# Earlier definition of the swap function goes here
 
-![image](https://user-images.githubusercontent.com/19671036/60617640-be504700-9d99-11e9-94f1-59ab28110248.png)
+import random
+
+def main(size = 20, sort = quicksort):
+    lyst = []
+    for count in range(size):
+        lyst.append(random.randint(1, size + 1))
+    print(lyst)
+    sort(lyst)
+    print(lyst)
+    
+if _namd_ == "_main_":
+    main()
+```
 
 ---
 
 **Merge Sort Examples**
 
+```
+from arrays import Array
+
+def mergeSort(lyst):
+    # lyst     list being sorted
+    # copyBuffer temporary space needed during merge
+    copyBuffer = Array(len(lyst))
+    mergeSortHelper(lyst, copyBuffer, 0, len(lyst) - 1)
+```
+
+---
+    
 ![image](https://user-images.githubusercontent.com/19671036/60617666-cd36f980-9d99-11e9-8b5c-db91334e3f82.png)
 
 ---
