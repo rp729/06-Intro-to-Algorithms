@@ -41,13 +41,11 @@ Space complexity of an algorithm represents the amount of memory space required 
 
 Space complexity S(P) of any algorithm P is S(P) = C + SP(I), where C is the fixed part and S(I) is the variable part of the algorithm, which depends on instance characteristic I. Following is a simple example that tries to explain the concept −
 
-Algorithm: SUM(A,B)
-
-Step 1 - START
-
-Step 2 - c &larr; A + B + 10
-
-Step 3 - Stop
+|------------------------------|
+**Algorithm: SUM(A,B)  
+Step 1 - START    
+Step 2 - c &larr; A + B + 10  
+Step 3 - Stop**
 
 
 Here we have three variables A, B, and C and one constant. Hence S(P) = 1 + 3. Now, space depends on data types of given variables and constant types and it will be multiplied accordingly.
