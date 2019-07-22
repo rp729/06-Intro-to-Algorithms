@@ -43,6 +43,13 @@ using a single loop.
 
 Timing2.py
 
+```
+for j in range(problemSize):
+    for k in range(problemSize):
+        work += 1
+        work -= 1
+```
+
 ![image](https://user-images.githubusercontent.com/19671036/60617003-56e5c780-9d98-11e9-86d2-922cb9b93420.png)
 
 **Expected Output:**
@@ -58,6 +65,30 @@ Timing2.py
 ---
 
 **Algorithms Demo 3:**
+
+```
+File: counting.py
+Prints the number of iterations for problem sizes
+that double, using a nested loop.
+```
+
+```
+problemSize = 1000
+print("%12s%15s" % ("Problem Size", "Iterations))
+for count in range(5):
+    number = 0
+    # The start of the algorithm 
+    work = 1 
+    for j in range(problemSize):
+        for k in range(problemSize):
+            number += 1
+            work += 1
+            work -= 1 
+    # The end of the algorithm
+    print("%12d%15d" % (problemSize, number))
+    problemSize *= 2
+````
+**As you can see from the results, the number of iterations is the square of the problem size
 
 ![image](https://user-images.githubusercontent.com/19671036/60617105-97dddc00-9d98-11e9-8f38-fcbfd1ce642e.png)
 
