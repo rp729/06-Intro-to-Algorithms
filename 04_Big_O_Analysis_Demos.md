@@ -43,14 +43,14 @@ using a single loop.
 
 Timing2.py
 
+**As another example, consider the following change in tester program's algorithm:**
+
 ```
 for j in range(problemSize):
     for k in range(problemSize):
         work += 1
         work -= 1
 ```
-
-![image](https://user-images.githubusercontent.com/19671036/60617003-56e5c780-9d98-11e9-86d2-922cb9b93420.png)
 
 **Expected Output:**
 
@@ -89,8 +89,6 @@ for count in range(5):
     problemSize *= 2
 ````
 **As you can see from the results, the number of iterations is the square of the problem size
-
-![image](https://user-images.githubusercontent.com/19671036/60617105-97dddc00-9d98-11e9-8f38-fcbfd1ce642e.png)
 
 **Expected Output:**
 
