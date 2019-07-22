@@ -45,6 +45,12 @@ Let&#39;s try to learn algorithm-writing by using an example.
 
 **Problem**  − Design an algorithm to add two numbers and display the result.
 
+**Step 1 - START ADD  
+Step 2 - get values of a & b  
+Step 3 - c &larr; a + b  
+Step 4 - display c  
+Step 5 - STOP  **
+
  ![image](https://user-images.githubusercontent.com/19671036/60600339-92bb6580-9d75-11e9-9b34-4436f475c841.png)
 
 
@@ -58,11 +64,7 @@ Writing  **step numbers** , is optional.
 
 We design an algorithm to get a solution of a given problem. A problem can be solved in more than one ways.
 
-**Step 1 - START ADD
-Step 2 - get values of a & b
-Step 3 - c &larr; a + b
-Step 4 - display c
-Step 5 - STOP
+![image](https://user-images.githubusercontent.com/19671036/60600466-cd250280-9d75-11e9-8c12-b533f7e44677.png)
 
 Hence, many solution algorithms can be derived for a given problem. The next step is to analyze those proposed solution algorithms and implement the best suitable solution.
 
