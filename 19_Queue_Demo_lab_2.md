@@ -26,9 +26,39 @@ Each command button produces an appropriate message in the output area. This Tab
 
 Here is an interaction with the terminal-based interface:
 
-![image](https://user-images.githubusercontent.com/19671036/60824044-874dad00-a16e-11e9-8f64-dc7a9ee87dc2.png)
+```
+Main Menu
+    1 Schedule a patient
+    2 Treat the next patient
+    3 Treat all patients
+    4 Exit the program
+  
+Enter a number [1-4]: 1
+  
+Enter the patient's name: Larry
+Patient's condition:
+    1 Critical
+    2 Serious
+    3 Fair
+  
+Enter a number [1-3]: 1
+Larry is added to the critical list.
 
-Classes
+Main menu
+      1 Schedule a patient
+      2 Treat the next patient
+      3 Treat all patients
+      4 Exit the program
+      
+ Enter a number [1-4]: 3
+ 
+ Larry/ critical is being treated.
+ Steve/ serious is being treated.
+ Laura/ fair is being treated.
+ No patients available to treat.
+ ```
+ 
+**Classes**
 The application consists of a view class, called ERView, and a set of model classes. The view class interacts with the user and runs methods with the model. The class ERModel maintains a priority queue of patients. The class Patient represents patients, and the class Condition represents the three possible conditions. The relationships among the classes are shown in the next Figure
 
 ![image](https://user-images.githubusercontent.com/19671036/60824111-a2b8b800-a16e-11e9-87ec-6c4e46fe1baf.png)
