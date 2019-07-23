@@ -16,7 +16,26 @@ Insertion will be blocked once the queue is full, until items are consumed.  The
 
 See the following example for how to use the FIFO queue:
 
-![image](https://user-images.githubusercontent.com/19671036/60819695-aa279380-a165-11e9-9eb4-8fd943d6214d.png)
+```
+import Queue
+
+q = Queue.Queue()
+
+# put items at the end of the queue
+for x in range(4):
+    q.put("item-" + str(x))
+    
+# remove items from the head of the queue
+while not q.empty():
+    print q.get()
+    
+# the output
+item-0
+item-1
+item-2
+item-3
+
+```
 
 **Creating a FIFO Queue**
 
@@ -29,10 +48,26 @@ Syntax: Queue.put(data)
 
 // Get And remove the element
 Syntax: Queue.get()
-```
-![image](https://user-images.githubusercontent.com/19671036/60820513-35555900-a167-11e9-95a5-13731484a436.png)
 
-```
+import queue
+
+# From class queue, Queue is created as an object
+# Now L is Queue of a maximum capacity of 20
+L = queue.Queue(maxsize=20)
+
+# Data is inserted into Queue using put()
+# Data is inserted at the end
+L.put(5)
+L.put(9)
+L.put(1)
+L.put(7)
+
+# get() takes data out from the Queue from the head of the Queue
+print(L.get())
+print(L.get())
+print(L.get())
+print(L.get())
+
 Output:
 
 5
