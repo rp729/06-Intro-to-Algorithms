@@ -63,11 +63,47 @@ This is a method of the LinkedList class. To print the data present in all the n
 
 **Coding a Singly Linked List**
 
-![image](https://user-images.githubusercontent.com/19671036/60899637-68175400-a230-11e9-90ba-2c47735892d7.png)
 
----
+**Class Node:**
 
-![image](https://user-images.githubusercontent.com/19671036/60899703-83825f00-a230-11e9-9a70-d23911da1699.png)
+```
+    def _init_(self, data, nextNode=None):
+        self.data = data
+        self.nextNode = nextNode
+        
+    def getData(self):
+        return self.data
+        
+    def getNextNode(self):
+        return self.nextNode
+        
+    def setNextNode(self, val):
+        self.nextNode = val
+ ```
+ 
+ **Class LinkedList**
+
+```
+    def _init_(self, head = None):
+        self.head = head
+        self.size = 0
+        
+    def getSize(self):
+        return self.size
+        
+    def addNode(self, data):
+        newNode = Node(data, self.head)
+        self.head = newNode
+        self.size+=1
+        return True
+        
+    def printNode(self):
+        curr = self.head
+        while curr:
+            print(curr.data)
+            curr = curr.getNextNode()
+
+```
 
 ---
 
