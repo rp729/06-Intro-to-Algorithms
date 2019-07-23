@@ -4,16 +4,15 @@
 
 ## Practice Labs
 
-![image](https://user-images.githubusercontent.com/19671036/60618009-a0cfad00-9d9a-11e9-9d1c-45ecd62a0825.png)
-
-**Exercises**
+---
+**Exercise 1**
 
 * Write a tester program that counts and displays the number of iterations of the following loop:
 
 ```
 while problemSize > 0:
     problemSize = problemSize // 2
-    
+
 ```
 
 * Run the program you created in Exercise 1 using problem sizes, of 1000, 2000, 4000, 10,000, and 100,000.  As the problem size doubles or increases by a factor of 10.  
