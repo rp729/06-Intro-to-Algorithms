@@ -36,8 +36,6 @@ else:
     
 ```
 
-![image](https://user-images.githubusercontent.com/19671036/60608293-b9cd6380-9d84-11e9-92ea-0b83fb67c511.png)
-
 When you enter the input, make sure it is between single or double quotes (i.e. &#39;pencil&#39;). If you input &#39;pencil&#39;, for instance, you should get the following output:
 
 Yes, the item is in the bag
