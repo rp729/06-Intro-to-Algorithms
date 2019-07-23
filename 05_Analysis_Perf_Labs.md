@@ -39,7 +39,7 @@ while problemSize > 0:
 * The **partition** operation in quicksort chooses the item at the midpoint as the pivot.  Describe two other strategies for selecting a pivot value.
 
 * Sandra has a bright idea: when the length of a sublist in quicksort is less than a certain number - say, 30 elements - run an insertion sort to process that sublist.  
-**Explain why this is a bright idea.
+**Explain why this is a bright idea.**
 
 * Why is merge sort an O(*n* log *n*) algorithm in the worst case?
 
