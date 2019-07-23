@@ -35,7 +35,18 @@ This is not the most sensible way to build a text-based search engine, but I hav
 
 This particular search engine scans all files in the current directory in parallel. A process is constructed for each core on the CPU. Each of these is instructed to load some of the files into memory. Let's look at the function that does the loading and searching:
 
-![image](https://user-images.githubusercontent.com/19671036/60818728-d9d59c00-a163-11e9-8446-84d686ac1f9f.png)
+```
+def search(paths, query_q, results_q):
+    lines = []
+    for path in paths:
+        lines.extend(1.strip() for 1 in path.open())
+        
+    query = query_q.get()
+    while query:
+        results_q.put([1 for 1 in lines if query in 1])
+        query = query_q.get()
+        
+```        
 
 Remember, this function is run in a different process (in fact, it is run in cpucount() different processes) from the main thread. It passes a list of path.path objects, and two multiprocessing.Queue objects; one for incoming queries and one to send outgoing results. These queues automatically pickle the data in the queue and pass it into the subprocess over a pipe. These two queues are set up in the main process and passed through the pipes into the search function inside the child processes.
 
@@ -43,13 +54,39 @@ The search code is pretty dumb, both in terms of efficiency and of capabilities;
 
 Let's look at the main process, which sets up these queues:
 
-![image](https://user-images.githubusercontent.com/19671036/60818783-f245b680-a163-11e9-98a2-77c2279336db.png)
+```
+if _name_ == '_main_':
+    from multiprocessing import Process, Queue, cpu_count
+    from path import path
+    cpus = cpu_count()
+    pathnames = [f for f in path('.').listdir() if f.isfile()]
+    paths = [pathnames[i::cpus] for i in range(cpus)]
+    query_queues = [Queue() for p in range(cpus)]
+    results_queue = Queue()
+    
+    search_procs = [
+        Process(target=search, args=(p, q, results_queue)
+        for p, q in zip(paths, query_queues)
+    ]
+    for proc in search_procs:  proc.start()
+```
 
 For an easier description, let's assume cpu_count is four. Notice how the import statements are placed inside the if guard? This is a small optimization that prevents them from being imported in each subprocess (where they aren't needed) on some operating systems. We list all the paths in the current directory and then split the list into four approximately equal parts. We also construct a list of four Queue objects to send data into each subprocess. Finally, we construct a single results queue. This is passed into all four of the subprocesses. Each of them can put data into the queue and it will be aggregated in the main process.
 
 Now let's look at the code that makes a search actually happen:
 
-![image](https://user-images.githubusercontent.com/19671036/60818834-0be6fe00-a164-11e9-9ca9-508885b4dcdd.png)
+```
+for q in query_queues:
+    q.put("def")
+    q.put(None)  # Signal process termination
+    
+    for i in range(cpus):
+        for match in results_queue.get():
+            print(match)
+    for proc in search_procs:
+        proc.join()
+        
+```
 
 This code performs a single search for "def" (because it's a common phrase in a directory full of Python files!).
 
