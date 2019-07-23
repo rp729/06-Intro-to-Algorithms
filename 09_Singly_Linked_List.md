@@ -103,8 +103,17 @@ This is a method of the LinkedList class. To print the data present in all the n
             print(curr.data)
             curr = curr.getNextNode()
 
-```
+myList = LinkedList()
+print("Inserting")
+print(myList.addNode(5))
+print(myList.addNode(15))
+print(myList.addNode(25))
+print("Printing")
+myList.printNode()
+print("Size")
+print(myList.getSize)
 
+```
 ---
 
 **What are the advantages and disadvantages of Singly Linked Lists?**  
