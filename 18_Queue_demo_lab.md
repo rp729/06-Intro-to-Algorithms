@@ -46,6 +46,9 @@ Number of customers left in queue: 1
 Average time customers spend
 Waiting to be served: 2.38
 ```
+
+---
+
 **Classes and Responsibilities**
 
 As far as classes and their overall responsibilities are concerned, the system is divided into a main function and several model classes. The main function is responsible for interacting with the user, validating the three input values, and communicating with the model. The design and implementation of this function require no comment, and the function’s code is not presented. The classes in the model are listed in the following table:
@@ -75,17 +78,60 @@ The only other method needed is runSimulation. This method runs the abstract clo
 
 When the simulation ends, the runSimulation method returns the cashier’s results to the view. Here is the pseudocode for the method:
 
-![image](https://user-images.githubusercontent.com/19671036/60822072-61bea480-a16a-11e9-87d7-c40652812d54.png)
+```
+for each minute of the simulation 
+    ask the Customer class to generate a new customer
+    if a customer is generated
+        cashier.addCustomer(customer)
+        cashier.serveCustomers(current time)
+    return cashier's results
+```
 
 **Note:** The pseudocode algorithm asks the Customer class for an instance of itself. Because it is only probable that a customer will arrive at any given minute, occasionally a customer will not be generated. Rather than code the logic for making this choice at this level, you can bury it in a class method in the Customer class. From the model, the Customer class method generateCustomer receives the probability of a new customer arriving, the current time, and the average time needed per customer. The method uses this information to determine whether to create a customer and, if it does, how to initialize the customer. The method returns either the new Customer object or the value None. The syntax of running a class method is just like that of an instance method, except that the name to the left of the dot is the class’s name.
 
+---
+
 **Complete listing of the class MarketModel:**
 
-![image](https://user-images.githubusercontent.com/19671036/60822161-81ee6380-a16a-11e9-9c1a-e3916a1458d8.png)
+```
+"""
+File: marketmodel.py
+"""
+
+from cashier import Cashier
+from customer import Customer
+
+class MarketMode(object):
+
+    def _init_(self, lengthOfSimulation, averageTimePerCus, probabilityOfNewArrival):
+        self._probabilityOfNewArrival =\ probatilityOfNewArrival
+        self._lengthOfSimulation = lengthOfSimulation
+        self._averageTimePerCus = averageTimePerCus
+        self._cashier = Cashier()
+        
+    def ruSimulation(self):
+        """Run the clock for n ticks."""
+        for currentTime in range(self._lengthOfSimulation):
+            # Attemt to generate a new customer
+            customer = Customer.generateCustomer(self._probabilityOfNewArrival, currentTime, self._averageTimePerCus)
+            
+            #send customer to cashier if successfully generated
+            if customer != None
+                self._cashier to provide another unit of service self._cashier.serveCustomers(currentTime)
+                
+    def _str_(self):
+        return str(self._cashier)
+        
+```
 
 A cashier is responsible for serving a queue of customers. During this process, the cashier tallies the customers served and the minutes they spend waiting in line. At the end of the simulation, the class’s __str__ method returns these totals as well as the number of customers remaining in the queue. The class has the following instance variables:
 
-![image](https://user-images.githubusercontent.com/19671036/60822205-9af71480-a16a-11e9-81ee-2c9fdf14820d.png)
+```
+totalCustomerWaitTime
+customerServed
+queue
+currentCustomer
+```
 
 The last variable holds the customer currently being processed.
 
@@ -95,14 +141,80 @@ The method serveCustomers handles the cashier’s activity during one clock tick
 
 ![image](https://user-images.githubusercontent.com/19671036/60822289-c8dc5900-a16a-11e9-8d48-4cde826a2154.png)
 
+---
+
 **Pseudocode for the method serveCustomers:**
 
-![image](https://user-images.githubusercontent.com/19671036/60822331-df82b000-a16a-11e9-8d60-7912fffb9070.png)
+```
+if currentCustomer is None:
+    if queue is empty:
+        return
+    else:
+        currentCustomer = queue.pop()
+        totalCustomerWaitTime = totalCustomerWaitTime + currentTime - currentCustomer.arrivalTime()
+        increment customerServed
+        currentCustomer.serve()
+        if currentCustomer.amountOfSeriveNeeded() == 0:
+            currentCustomer = None
+
+```
+
+---
 
 **Code for the Cashier class:**
 
-![image](https://user-images.githubusercontent.com/19671036/60822431-0b9e3100-a16b-11e9-86cc-c45a0db22de3.png)
-![image](https://user-images.githubusercontent.com/19671036/60822462-1c4ea700-a16b-11e9-9b12-dd51c09e2adc.png)
+```
+"""
+File: cashier.py
+"""
+
+from linkedqueue import LinkedQueue
+
+class Cashier(object):
+    
+    def _init_(self):
+        self._totalCustomerWaitTime = 0
+        self._customersServed = 0
+        self._currentCustomer = None
+        self._queue = LinkedQueue()
+        
+    def addCustomer(self, c):
+        self._queue.add(c)
+        
+    def serveCustomers(self, currentTime):
+        if self._currentCustomer is None:
+            # No Customers yet
+            if self._queue.isEmpty():
+                return
+            else:
+                # Pop first waiting customer and tally results
+                self._currentCustomer = self._queue.pop()
+                self._totalCustomerWaitingTime += \ currentTime - \
+                    self._currentCustomer.arrivalTime()
+                self._customersServed += 1
+                
+            # Give a unit of service
+            self._currentCustomer.serve()
+            
+            # If current customer is finished, send it away 
+            if self._currentCustomer.amountOfServiceNeeded() == \ 
+            0:
+            self._currentCustomer = None
+             
+    def _str_(self):
+        result = "TOTALS FOR THE CASHIER\n" + \
+            "Number of customers served:     " +\
+            str(self._customersServed)  +  "\n"
+        if self._customersServed != 0:
+        aveWaitTime = self._totalCustomerWaitTime /\
+            self._customersServed
+        result += "Number of customers left in queue: " \
+            + str(len(self._queue)) + "\n" + \
+                "Average time customers spend\n" + \
+                "watiting to be served:          " \
+                + "%5.2f" % aveWaitTime
+    return result
+```
 
 The Customer class maintains a customer’s arrival time and the amount of service needed. The constructor initializes these with data provided by the market model. The instance methods include the following:
 
@@ -114,15 +226,53 @@ Image serve()—Decrements the number of service units by one.
 
 The remaining method, generateCustomer, is a class method. It expects as arguments the probability of a new customer arriving, the current time, and the number of service units per customer. The method returns a new instance of Customer with the given time and service units, provided the probability is greater than or equal to a random number between 0 and 1. Otherwise, the method returns None, indicating that no customer was generated. The syntax for defining a class method in Python is the following:
 
-![image](https://user-images.githubusercontent.com/19671036/60822548-46a06480-a16b-11e9-85d2-9eb491e7c5cc.png)
+```
+@classmethod
+def <method name> (cls, <other parameters>):
+    <statement>
+```
+
+---
 
 **Code for the Customer class:**
 
-![image](https://user-images.githubusercontent.com/19671036/60822595-5ddf5200-a16b-11e9-9e65-0f74ea6e6774.png)
+```
+"""
+File:  customer.py
+"""
+
+import random
+
+class Customer(object):
+
+    @classmethod
+    def generateCustomer(cls, probabilityOfNewArrival, arrivalTime, averageTimePerCustomer):
+        """Returns a Customer ofject if the probability of arrival is greater than or equal to a random number.
+        otherwise, returns None, indicating no new customer."""
+        
+        if random.random() <= probabilityOfNewArrival:
+            return Customer(arrivalTime, averageTimePerCustomer)
+        else:
+            return None
+            
+    def _init_((self, arrivalTime, serviceNeeded):
+        self._arrivalTime = arrivalTime
+        self._amountOfServiceNeeded = serviceNeeded
+        
+    def arrivalTime(self):
+        return self._arrivalTime
+        
+    def amountOfServicNeeded (self):
+        return self._arrivalTime
+        
+    def amountOfServiceNeeded(self):
+        return self._amountOfServiceNeeded
+        
+    def serve(self):
+        """Accepts a unit of service from the cashier."""
+        self._amountOfServiceNeeded -= 1
+```          
 
 ---
 
 <a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/19_Queue_Demo_lab_2.md" > Continue to Emergency Room Case Study </a>
-
-
-
