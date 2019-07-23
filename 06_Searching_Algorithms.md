@@ -10,9 +10,31 @@ The _Linear Search a_lgorithm is a simple algorithm, where each item in the list
 
 The Linear Search algorithm is implemented in Python as follows:
 
-![image](https://user-images.githubusercontent.com/19671036/60608214-8ab6f200-9d84-11e9-8311-37ba5c44a776.png)
-
+```
+def linearSearch(item, my_list):
+    found = False
+    position = 0
+    while position < len(my_list) and not found:
+        if my_list[position] == item:
+            found = True
+        position = position + 1
+    return found
+    
+```
+    
 Let&#39;s test the code. Enter the following statement at the end of the Python script above:
+
+```
+
+bag = ['book', 'pencil', 'pen', 'note book', 'sharpener', 'eraser']
+item = input('What item do you want to check for in the bag?')
+itemFound = linearSearch(item, bag)
+if itemFound:    
+    print ('Yes, the item is in the bag')
+else:
+    print ('Oops, your item seems not to be in the bag')
+    
+```
 
 ![image](https://user-images.githubusercontent.com/19671036/60608293-b9cd6380-9d84-11e9-92ea-0b83fb67c511.png)
 
