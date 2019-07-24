@@ -104,7 +104,7 @@ from customer import Customer
 class MarketMode(object):
 
     def _init_(self, lengthOfSimulation, averageTimePerCus, probabilityOfNewArrival):
-        self._probabilityOfNewArrival =\ probatilityOfNewArrival
+        self._probabilityOfNewArrival =\ probabilityOfNewArrival
         self._lengthOfSimulation = lengthOfSimulation
         self._averageTimePerCus = averageTimePerCus
         self._cashier = Cashier()
