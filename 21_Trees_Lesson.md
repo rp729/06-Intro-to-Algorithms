@@ -56,4 +56,4 @@ In Python, all classes are organized into a single hierarchy, as there exists a 
  
  ---
  
-<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/15_Stack%20Implementation_Lesson.md" > Continue to Next Topic </a>
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/22_Trees_Examples_Trees.md" > Continue to Next Topic </a>
