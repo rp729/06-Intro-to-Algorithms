@@ -39,6 +39,7 @@ The left subtree of a node contains only nodes with keys less than the node's ke
 The right subtree of a node contains only nodes with keys greater than the node's key.
 Both the left and right subtrees must also be binary search trees.
 
+```
 Example 1:
 
     2
@@ -54,6 +55,7 @@ Example 2:
   2   3
 
 Binary tree [1,2,3], return false.
+```
 
 4. Write a Python program to delete a node with the given key in a given Binary search tree (BST).  
 Note: Search for a node to remove. If the node is found, delete the node.
