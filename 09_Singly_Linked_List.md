@@ -63,7 +63,8 @@ This is a method of the LinkedList class. To print the data present in all the n
 
 **Coding a Singly Linked List**
 
-```
+```python
+
 Class Node:
     def _init_(self, data, nextNode=None):
         self.data = data
