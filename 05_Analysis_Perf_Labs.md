@@ -9,7 +9,8 @@
 
 * Write a tester program that counts and displays the number of iterations of the following loop:
 
-```
+```python
+
 while problemSize > 0:
     problemSize = problemSize // 2
 
