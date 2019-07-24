@@ -78,7 +78,7 @@ The only other method needed is runSimulation. This method runs the abstract clo
 
 When the simulation ends, the runSimulation method returns the cashier’s results to the view. Here is the pseudocode for the method:
 
-```
+```python
 for each minute of the simulation 
     ask the Customer class to generate a new customer
     if a customer is generated
@@ -93,7 +93,7 @@ for each minute of the simulation
 
 **Complete listing of the class MarketModel:**
 
-```
+```python
 """
 File: marketmodel.py
 """
@@ -145,7 +145,7 @@ The method serveCustomers handles the cashier’s activity during one clock tick
 
 **Pseudocode for the method serveCustomers:**
 
-```
+```python
 if currentCustomer is None:
     if queue is empty:
         return
@@ -163,7 +163,7 @@ if currentCustomer is None:
 
 **Code for the Cashier class:**
 
-```
+```python
 """
 File: cashier.py
 """
@@ -226,7 +226,7 @@ Image serve()—Decrements the number of service units by one.
 
 The remaining method, generateCustomer, is a class method. It expects as arguments the probability of a new customer arriving, the current time, and the number of service units per customer. The method returns a new instance of Customer with the given time and service units, provided the probability is greater than or equal to a random number between 0 and 1. Otherwise, the method returns None, indicating that no customer was generated. The syntax for defining a class method in Python is the following:
 
-```
+```python
 @classmethod
 def <method name> (cls, <other parameters>):
     <statement>
@@ -236,7 +236,7 @@ def <method name> (cls, <other parameters>):
 
 **Code for the Customer class:**
 
-```
+```python
 """
 File:  customer.py
 """
