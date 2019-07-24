@@ -155,33 +155,35 @@ class ERView(object):
         """Obtains condition info."""
         menu = "Patient's condition:\n" + \
             " 1 Critical\n" + \
-            " 2 Serious
+            " 2 Serious\n" + \
+            " 3 Fair\n"
+        number = self._getCommand(3, menu)
+        return Condition(number)
         
+    def_getCommand(self._getCommand(3, menu)
+        """Obtains and returns a command number."""
         
+        prompt = "Enter a number [1-" + str(high) + "]: "
+        commandRange = list(map(str, range(1, high + 1)))
+        error = "Error, number must be 1 to " + str(high)
+        while True:
+            print (menu)
+            command = input(prompt)
+            if command in comandRange:
+                return int(command)
+            else:
+                print(error)
+                
+### Main function to start up the application ### 
+
+    def main():
+        model = ERModel()
+        view = ERView(model)
+        view.run()
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
+    if _name_ == "_main_":
+        main()
 ```
-
-
-
-
-
-
-
-
-
-
-![image](https://user-images.githubusercontent.com/19671036/60824226-d85da100-a16e-11e9-97ee-3b7f7ced417b.png)
-![image](https://user-images.githubusercontent.com/19671036/60824277-ef9c8e80-a16e-11e9-8637-e48eb791f5fb.png)
-![image](https://user-images.githubusercontent.com/19671036/60824335-0a6f0300-a16f-11e9-93ad-f57022329773.png)
 
 The class ERModel uses a priority queue to schedule the patients. Its implementation is left as a programming project for you.
 
