@@ -13,7 +13,7 @@ whether the number of closing brackets matches the number of opening brackets.
 
 It will also ensure that one pair of brackets really is contained in another:
 
-```
+```python
 def check_brackets(statement):
     stack = Stack()
     for ch in statement:
@@ -40,7 +40,7 @@ Our function parses each character in the statement passed to it. If it gets an 
 
 Once we have got to the end of the statement, we need to do one last check. If the stack is empty, then we are fine and we can return True. But if the stack is not empty, then we have some opening bracket which does not have a matching closing bracket and we shall return False. We can test the bracket-matcher with the following little code:
 
-```
+```python
 s1 = (
     "{(foo), (bar) } [hello] (((this) is) a) test",
     "{(foo), (bar) } [hello] (((this) is) atest",
