@@ -1,4 +1,7 @@
-# Python Program for First Binary Tree Search implementing Recursion
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md"> Return to TOC </a>
+
+---
+## Python Program for First Binary Tree Search implementing Recursion
 
 This is a Python program to perform depth-first search on a binary tree using recursion.
 Problem Description
