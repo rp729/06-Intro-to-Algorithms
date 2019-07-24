@@ -26,7 +26,7 @@ Each command button produces an appropriate message in the output area. This Tab
 
 Here is an interaction with the terminal-based interface:
 
-```
+```python
 Main Menu
     1 Schedule a patient
     2 Treat the next patient
@@ -67,7 +67,7 @@ The application consists of a view class, called ERView, and a set of model clas
 
 The Patient and Condition classes maintain a patient’s name and condition. You can compare (according to their conditions) and view them as strings. Here is the code for these two classes:
 
-```
+```python
 class Condition(object):
 
     def _init_(self, rank):
@@ -99,7 +99,7 @@ class Patient(object)
 
 The class ERView uses a typical menu-driven loop. You structure the code using several helper methods. Here is a complete listing:
 
-```
+```python
 """
 File: erapp.py
 The view for an emergency room scheduler.
