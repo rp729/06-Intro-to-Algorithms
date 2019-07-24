@@ -48,3 +48,6 @@ Problem Solution
 6. The method inorder_nth displays the nth element in the in-order traversal of the tree. It calls the recursive method inorder_nth_helper.
 ```
 
+---
+
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/24_Trees_Perf_Labs.md"> Continue to Next Topic </a>
