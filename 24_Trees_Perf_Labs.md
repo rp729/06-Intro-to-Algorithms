@@ -6,7 +6,11 @@
 
 ---
 
-![image](https://user-images.githubusercontent.com/19671036/60834274-f5ea3500-a185-11e9-80a1-f5cf6bb9f0c0.png)
+**Task 1**
+
+* Use the following Tree to answer the six questions.
+
+![](/Assets/Node24_1.png)
 
 ![image](https://user-images.githubusercontent.com/19671036/60834290-013d6080-a186-11e9-9e1a-a21b27ee6c56.png)
 
