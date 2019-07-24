@@ -67,9 +67,95 @@ The application consists of a view class, called ERView, and a set of model clas
 
 The Patient and Condition classes maintain a patient’s name and condition. You can compare (according to their conditions) and view them as strings. Here is the code for these two classes:
 
-![image](https://user-images.githubusercontent.com/19671036/60824173-bebc5980-a16e-11e9-9ff1-b18918d06fcc.png)
+```
+class Condition(object):
+
+    def _init_(self, rank):
+        self._rank = rank
+        
+    def _ge_(self, other):
+        """Used for comparison,"""
+        return self._rank >= other._rank
+        
+    def _str_(self):
+        if    self._rank == 1: return "critical"
+        elif self._rank == 2:  return "serious"
+        else:                  return "fair"
+        
+class Patient(object)
+
+    def _init_(self, name, condition):
+        self._name = name
+        self._condition = condition
+        
+    def _ge_(self, other):
+        """Used for comparisons."""
+        return self._conditions >= other._conditions
+        
+    def _str_(self):
+        return self._name + " /" + str(self._condition)
+        
+ ```
 
 The class ERView uses a typical menu-driven loop. You structure the code using several helper methods. Here is a complete listing:
+
+```
+"""
+File: erapp.py
+The view for an emergency room scheduler.
+"""
+
+from model import ERModel, Patient, Condition
+
+class ERView(object):
+    """ The view class for the ER application"""
+    
+    def _init_(self, model):
+        self._model = model
+        
+    def run(self):
+        """Menu-driven comand loop for the app."""
+        
+        menu = "Main menu\n" + \
+            " 1 Schedule a patient\n" + \
+            " 2 Treat the next patient\n" + \
+            " 3 Treat all patients\n" \
+            " 4 Exit the program\n"
+        while True:
+            command = self._getCommand(4, menu)
+            if   command == 1:  self._schedule()
+            elif command == 2:  self._treatNext()
+            elif command == 3:  self._treatAll()
+            else: break
+            
+    def treatNext(self):
+        """Treats one patient if there is one."""
+        if self.model.isEmpty():
+            print("No patients available to treat")
+        else:
+            patient = self.model.treatNext()
+            print(patient, "is being treated.")
+
+    def treatAll(self):
+        """ Treats all the remaining patients."""
+        if self.model.isEmpty():
+            print("No patients available to treat.")
+        else:
+            while not self.model.isEmpty():
+                self.treatNext()
+                
+    def _schedule(self):
+        """Obtains patient info
+```
+
+
+
+
+
+
+
+
+
 
 ![image](https://user-images.githubusercontent.com/19671036/60824226-d85da100-a16e-11e9-97ee-3b7f7ced417b.png)
 ![image](https://user-images.githubusercontent.com/19671036/60824277-ef9c8e80-a16e-11e9-8637-e48eb791f5fb.png)
