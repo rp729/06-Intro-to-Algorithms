@@ -63,7 +63,8 @@ Current will point to the next node in the list in each iteration.
 
 **Program**
 
-```
+```python
+
 #Represent a node of doubly linked list
 
 class Node:
