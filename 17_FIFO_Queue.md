@@ -16,7 +16,7 @@ Insertion will be blocked once the queue is full, until items are consumed.  The
 
 See the following example for how to use the FIFO queue:
 
-```
+```python
 import Queue
 
 q = Queue.Queue()
@@ -39,7 +39,7 @@ item-3
 
 **Creating a FIFO Queue**
 
-```
+```python
 // Initialize queue
 Syntax: queue.Queue(maxsize)
 
