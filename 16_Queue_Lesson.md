@@ -35,7 +35,7 @@ This is not the most sensible way to build a text-based search engine, but I hav
 
 This particular search engine scans all files in the current directory in parallel. A process is constructed for each core on the CPU. Each of these is instructed to load some of the files into memory. Let's look at the function that does the loading and searching:
 
-```
+```python
 def search(paths, query_q, results_q):
     lines = []
     for path in paths:
@@ -54,7 +54,7 @@ The search code is pretty dumb, both in terms of efficiency and of capabilities;
 
 Let's look at the main process, which sets up these queues:
 
-```
+```python
 if _name_ == '_main_':
     from multiprocessing import Process, Queue, cpu_count
     from path import path
@@ -75,7 +75,7 @@ For an easier description, let's assume cpu_count is four. Notice how the import
 
 Now let's look at the code that makes a search actually happen:
 
-```
+```python
 for q in query_queues:
     q.put("def")
     q.put(None)  # Signal process termination
