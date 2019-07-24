@@ -23,19 +23,47 @@
 
 **Task 2**
 
-1. What is the difference
+1. What is the difference between a perfectly balanced binary tree and a complete binary tree?
+2. What is the difference between a complete binary tree and a full binary tree?
+3. A full binary tree has a height of 5.  How many nodes does it contain?
+4. A complete binary tree contains 125 nodes.  What is its height?
+5. How many nodes are on a given level *L* in a full binary tree?  Express your answer in terms of*L*.
 
-![image](https://user-images.githubusercontent.com/19671036/60834290-013d6080-a186-11e9-9e1a-a21b27ee6c56.png)
+---
+**Task 3**
 
-![image](https://user-images.githubusercontent.com/19671036/60834300-0a2e3200-a186-11e9-9acd-8c9ce5a7ea21.png)
+1. What is the heap property for a min-heap?
+2. How is a binary search tree different from a binary tree?
+3. Write the expression represented by the following expression tree in infix, prefix, and postfix notations.(*Hint:* Use the inorder, preorder, and postorder traversals described in this section to obtain your answers.)
 
-![image](https://user-images.githubusercontent.com/19671036/60834316-131f0380-a186-11e9-992d-53e92bdf9648.png)
+![](/Assets/Node24_2.png)
 
-![image](https://user-images.githubusercontent.com/19671036/60834332-1f0ac580-a186-11e9-8aa8-99aadaeef48b.png)
+4. Draw diagrams of the expression trees for the following expressions:
+  a. 35 + 6
+  b. 3 + 56
+  c. 356
+  
+  ---
 
-![image](https://user-images.githubusercontent.com/19671036/60834347-27630080-a186-11e9-968f-6376a9832b42.png)
+**Task 4**
 
-![image](https://user-images.githubusercontent.com/19671036/60834361-2fbb3b80-a186-11e9-8e09-9e9e3a1f7f54.png)
+1. Describe how insertions can have a negative effect on subsequent searches of a binary search tree.
+2. Discuss the trade-offs between the array-based implementation of a sorted bag presented in Chapter 6 and a binary search tree implementation of a sorted bag.
+
+---
+
+**Task 5**
+
+1. Assume that a node is at position 12 in an array representation of a binary tree.  Give the positions of that node's parent, left child, and right child.
+2. Whar are the constraints on a binary tree that is contained in an array?
+
+---
+
+**Task 6** 
+
+1. How do the run times of the heap operation differ from their counterparts in binary search trees?
+2. What is the advantage of using a list over using an array to implement a heap?
+3. The heap sort uses a heap to sort a list of items.  The strategy of this sort is to add the items in the list to a heap and then remove all of them from the heap as they are transferred back to the list. What is the run time and memory complexity of the heap sort?  
 
 ---
 
