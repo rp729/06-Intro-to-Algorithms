@@ -145,7 +145,29 @@ class ERView(object):
                 self.treatNext()
                 
     def _schedule(self):
-        """Obtains patient info
+        """Obtains patient info and schedules patient."""
+        name = input("\nEnter the patient's name:  ")
+        condition = self._getCondition()
+        self._model.schedule(Patient(name, condition))
+        print(name, "is added to the", condition, "list\n")
+        
+    def _getCondition(self):
+        """Obtains condition info."""
+        menu = "Patient's condition:\n" + \
+            " 1 Critical\n" + \
+            " 2 Serious
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 ```
 
 
