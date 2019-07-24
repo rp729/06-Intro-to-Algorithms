@@ -27,4 +27,6 @@ The program creates a linked list using data items input from the user and deter
 
 ---
 
+**Please submit your work before continuing**
+
 <a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/14_Stacks_Lesson.md"> Continue to Next Topic </a>
