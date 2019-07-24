@@ -13,7 +13,7 @@ Thus, a stack is a last in, first out (LIFO) structure:
 
 The preceding figure depicts a stack of plates. Adding a plate to the pile is only possible by leaving that plate on top of the pile. To remove a plate from the pile of plates means to remove the plate that is on top of the pile.There are two primary operations that are done on stacks: push and pop. When an element is added to the top of the stack, it is pushed onto the stack. When an element is taken off the top of the stack, it is popped off the stack. Another operation which is used sometimes is peek, which makes it possible to see the element on the stack without popping it off.Stacks are used for a number of things. One very common usage for stacks is to keep track of the return address during function calls. Let's imagine that we have the following little program:
 
-```
+```python
 def b():
     print('b')
     
@@ -29,7 +29,7 @@ When the program execution gets to the call to a(), it first pushes the address 
 
 Stacks are actually also used to pass data between functions. Say you have the following function call somewhere in your code:
 
-```
+```python
 somefunc(14, 'eggs', 'ham','spam')
 
 ```
@@ -40,7 +40,7 @@ What is going to happen is that 14, 'eggs', 'ham' and 'spam' will be pushed onto
 
 When the code jumps into the function, the values for a, b, c, d will be popped off the stack. The spam element will be popped off first and assigned to d, then "ham" will be assigned to c, and so on:
 
-```
+```python
 def somefunc(a, b, c, d):
     print("function executed");
     
@@ -50,7 +50,7 @@ def somefunc(a, b, c, d):
 
 Now let us study an implementation of a stack in Python. We start off by creating a node class, just as we did in the previous chapter with lists:
 
-```
+```python
 class Node:
     def _init_(self, data=None):
         self.data = data
@@ -61,7 +61,7 @@ This should be familiar to you by now: a node holds data and a reference to the 
 
 Now let us look at the stack class. It starts off similar to a singly linked list. We need to know the node at the top of the stack. We would also like to keep track of the number of nodes in the stack. So we will add these fields to
 
-```
+```python
 class stack:
     def _init_(self):
         self.top = None
@@ -73,7 +73,7 @@ class stack:
 
 The push operation is used to add an element to the top of the stack. Here is an implementation:
 
-```
+```python
 def push(self, data):
     node = Node(data)
     if self.top:
@@ -97,7 +97,7 @@ In a scenario where we have an existing stack, we move self.top so that it point
 
 Now we need a pop method to remove the top element from the stack. As we do so, we need to return the topmost element as well. We will make the stack return None if there are no more elements:
 
-```
+```python
 def pop(self):
     if self.top:
         data = self.top.data
@@ -127,7 +127,7 @@ Removing such a node results in self.top pointing to None:
 
 As we said earlier, we could also add a peek method. This will just return the top of the stack without removing it from the stack, allowing us to look at the top element without changing the stack itself. This operation is very straightforward. If there is a top element, return its data, otherwise return None (so that the behavior of peek matches that of pop):
 
-```
+```python
 def peek(self):
     if self.top
         return self.top.data
