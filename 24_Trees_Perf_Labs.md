@@ -1,4 +1,11 @@
-Performance Lab Set #1
+<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md"> Return to TOC </a>
+
+---
+
+## Performance Lab Set #1
+
+---
+
 ![image](https://user-images.githubusercontent.com/19671036/60834274-f5ea3500-a185-11e9-80a1-f5cf6bb9f0c0.png)
 
 ![image](https://user-images.githubusercontent.com/19671036/60834290-013d6080-a186-11e9-9e1a-a21b27ee6c56.png)
@@ -39,3 +46,12 @@ Note: Search for a node to remove. If the node is found, delete the node.
 
 5. Write a Python program to convert a given array elements to a height balanced Binary Search Tree (BST).  
 6. Write a Python program to find the kth smallest element in a given a binary search tree.  
+
+
+**Submit your assignment**
+
+---
+
+**End of Python Algorithms**
+
+<a href="https://github.com/CyberTrainingUSAF/07-Network-Programming/blob/master/00-Table-of-Contents.md"> Continue to Network Programming </a>
