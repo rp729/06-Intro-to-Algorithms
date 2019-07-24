@@ -12,6 +12,19 @@
 
 ![](/Assets/Node24_1.png)
 
+1. What are the leaf nodes in the tree?  
+2. What are the interior nodes in the tree?  
+3. What are the siblings of node 7?
+4. What is the height of the tree?
+5. How many nodes are in level 2?
+6. Is the tree a general tree, a binary tree, or both?
+
+---
+
+**Task 2**
+
+1. What is the difference
+
 ![image](https://user-images.githubusercontent.com/19671036/60834290-013d6080-a186-11e9-9e1a-a21b27ee6c56.png)
 
 ![image](https://user-images.githubusercontent.com/19671036/60834300-0a2e3200-a186-11e9-9acd-8c9ce5a7ea21.png)
