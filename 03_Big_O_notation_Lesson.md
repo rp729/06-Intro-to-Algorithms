@@ -79,23 +79,27 @@ Now you should understand the What and the Why of big-O notation, as well as How
 
 * We consider all mathematical operations to be constant time (O( 1 )) operations. So the following functions are all considered to be O( 1 ) in complexity:
 
-```
+```python
+
 def inc(x):
 return x+
 ```
 
-```
+```python
+
 def mul(x, y):
 return x*y
 ```
 
-```
+```python
+
 def foo(x):
 y = x*77.
 return x/8.
 ```
 
-```
+```python
+
 def bar(x, y):
 z = x + y
 w = x * y
@@ -114,7 +118,7 @@ return 9*q
     built-in Python operator *. If we define our own multiplication function that doesn’t
     use *, it will not be O( 1 ) anymore:
 
-```
+```python
 
 def mul2(x, y):
 result = 0
@@ -133,7 +137,7 @@ Here, this function is O(y) - the way we’ve defined it is dependent on the siz
 
 * Consider the following code:
 
-```
+```python
 
 def factorial(n):
 result = 1
@@ -148,7 +152,7 @@ return num
 
 * Consider the following code:
 
-```
+```python
 
 def factorial2(n):
 result = 1
@@ -173,7 +177,8 @@ return num
     of the condition can be constant, linear, or even worse - it all depends on what the
     condition is.
 
-```
+```python
+
 def count_ts(a_str):
 count = 0
 for char in a_str:
@@ -186,7 +191,8 @@ In this example, we used an if statement. The analysis of the runtime of a condi
 
 **Now consider this code:**
 
-```
+```python
+
 def count_same_ltrs(a_str, b_str):
 count = 0
 
@@ -210,7 +216,8 @@ big-O notation is an upper bound on the worst-case running time. Sometimes analy
 * While loops: With while loops you have to combine the analysis of a conditional with
     one of a for loop.
 
-```
+```python
+
 def factorial3(n):
 result = 1
 
@@ -224,7 +231,8 @@ return result
 
 **What is the complexity of factorial3**
 
-```
+```python
+
 def char_split(a_str):
 result = []
 index = 0
@@ -247,7 +255,8 @@ here: http://wiki.python.org/moin/TimeComplexity
 
 * Nested for loops - anytime you’re dealing with nested loops, work from the inside out. Figure out the complexity of the innermost loop, then go out a level and multiply (this is similar to the second piece of code in Example 5). So, what is the time complexity of this code fragment, if we let n = |z|?
 
-```
+```python
+
 result = 0
 
 for i in range(z):
@@ -262,7 +271,8 @@ result += (i*j)
 
 Recursion. Recursion can be tricky to figure out; think of recursion like a tree. If the tree has lots of branches, it will be more complex than one that has very few branches.  Consider recursive factorial:
 
-```
+```python
+
 def r_factorial(n):
 if n <= 0:
 return 1
@@ -277,7 +287,8 @@ In general, we can say that any recursive function g(x) whose recursive call is 
 
 **How about this function?
 
-```
+```python
+
 def foo(n):
 if n <= 1:
 return 1
@@ -292,7 +303,8 @@ See the pattern yet? We can make the intuition that we’ll need to make recursi
 
 **So, to figure out how many steps this takes, simply solve for x in terms of n:**
 
-```
+```python
+
 n
 = 1
 2 x^
