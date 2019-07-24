@@ -174,7 +174,7 @@ class ERView(object):
             else:
                 print(error)
                 
-### Main function to start up the application ### 
+# Main function to start up the application 
 
     def main():
         model = ERModel()
