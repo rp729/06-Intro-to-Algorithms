@@ -45,7 +45,8 @@ Timing2.py
 
 **As another example, consider the following change in tester program's algorithm:**
 
-```
+```python
+
 for j in range(problemSize):
     for k in range(problemSize):
         work += 1
@@ -66,13 +67,15 @@ for j in range(problemSize):
 
 **Algorithms Demo 3:**
 
-```
+```python
+
 File: counting.py
 Prints the number of iterations for problem sizes
 that double, using a nested loop.
 ```
 
-```
+```python
+
 problemSize = 1000
 print("%12s%15s" % ("Problem Size", "Iterations))
 for count in range(5):
@@ -107,7 +110,8 @@ for count in range(5):
 File: countfib.py
 Prints the number of calls of a recursive Fibonacci function with problem sizes that double.
 
-```
+```python
+
 from counter import Counter
 
 def fib(n, counter):
@@ -148,7 +152,8 @@ for count in range(5):
  
 **Minimum Example Search**
 
-```
+```python
+
 def index0fmin(lyst):
     """Returns the index of the minimum item."""
     minIndex = 0 
@@ -163,7 +168,8 @@ def index0fmin(lyst):
 
 **Sequential Search of List**
 
-```
+```python
+
 def sequentialSearch(target, lyst):
     """Returns the position of the target item if found, or -1 otherwise."""
     position = 0
@@ -178,7 +184,8 @@ def sequentialSearch(target, lyst):
 
 **Binary Search:**
 
-```
+```python
+
 def binarySearch(target, sortedLyst):
     left = 0
     right = len(sortedLyst) - 1
@@ -197,7 +204,8 @@ def binarySearch(target, sortedLyst):
 
 **Comparing Data Items**
 
-```
+```python
+
 class SavingsAccount(object):
     """This class represents a savings account with the owner's nmae, PIN, and balance."""
     def _init_(self, name, pin, balance = 0.0):
@@ -240,7 +248,8 @@ True
 
 **Basic Sort Demo 1:**
 
-```
+```python
+
 def swap(lyst, i, j):
     """Exchanges the items at positions i and j."""
     # You could say lyst[i], lyst[j] = lyst[j]. lyst[i]
@@ -255,7 +264,8 @@ def swap(lyst, i, j):
 
 ![image](https://user-images.githubusercontent.com/19671036/60617391-42ee9580-9d99-11e9-8b8b-cc3bd69a9294.png)
 
-```
+```python
+
 def selectionSort(lyst):
     i =0 
     while i < len(lyst) - 1:     # Do n - 1 searches
@@ -276,7 +286,8 @@ def selectionSort(lyst):
 
 ![image](https://user-images.githubusercontent.com/19671036/60617432-5a2d8300-9d99-11e9-98a7-244e41034f3f.png)
 
-```
+```python
+
 def bubbleSort(lyst):
     n = len(lyst)
     while n > 1:                       # Do n - 1 bubbles
@@ -292,7 +303,8 @@ def bubbleSort(lyst):
 
 **Modified Bubble Sort function:**
 
-```
+```python
+
 def bubbleSortWithTweak(lyst):
     n = len(lyst)
     while n< 1:
@@ -311,7 +323,8 @@ def bubbleSortWithTweak(lyst):
 
 **Insertion Sort Algorithms**
 
-```
+```python
+
 def insertionSort(lyst):
     i = l
     while i < len(lyst):
@@ -343,7 +356,8 @@ def insertionSort(lyst):
 
 **Implementation of Quicksort**
 
-```
+```python
+
 def quicksort(lyst):
     quicksortHelper(lyst, 0, len(lyst) - 1)
     
@@ -391,7 +405,7 @@ if _namd_ == "_main_":
 
 **Merge Sort Examples**
 
-```
+```python
 
 from arrays import Array
 
@@ -404,7 +418,8 @@ def mergeSort(lyst):
 
 ---
 
-```
+```python
+
 from arrays import Array
 
 def mergeSort(lyst):
@@ -416,7 +431,8 @@ def mergeSort(lyst):
 
 ---
 
-```
+```python
+
 def mergeSortHelper(lyst, copyBuffer, low, high):
     # lyst          list being sorted
     # copyBuffer    temp space needed during merge
@@ -438,7 +454,7 @@ def mergeSortHelper(lyst, copyBuffer, low, high):
 
 ---
 
-```
+```python
 
 def merge(lyst, copyBuffer, low, middle, high):
     # lyst           list that is being sorted
