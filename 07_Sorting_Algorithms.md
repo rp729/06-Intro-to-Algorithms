@@ -32,7 +32,8 @@ def bubblesort(list):
 
 **Swap the elements to arrange in order**
 
-```
+```python
+
     for iter\_num in range(len(list)-1,0,-1):
         for idx in range(iter\_num):
             if list[idx]\&gt;list[idx+1]:
@@ -68,7 +69,8 @@ Write a Python program to sort a list of elements using the bubble sort algorith
 
 **Merge sort divides the array into equal halves and then combines them in a sorted manner**
 
-```
+```python
+
 def merge\_sort(unsorted\_list):
     if len(unsorted\_list)\&lt;=1:
         return unsorted\_list
@@ -79,7 +81,8 @@ def merge\_sort(unsorted\_list):
 
 **Find the middle point and devide it**
 
-```
+```python
+
     middle = len(unsorted\_list)// 2
     left\_list = unsorted\_list[:middle]
     right\_list = unsorted\_list[middle:]
@@ -93,7 +96,8 @@ def merge\_sort(unsorted\_list):
 
 **Merge the sorted halves**
 
-```
+```python
+
 def merge(left\_half,right\_half):
     res =[]
     while len(left\_half)!=0and len(right\_half)!=0:
@@ -125,7 +129,8 @@ print(merge\_sort(unsorted\_list))
 
 Insertion sort involves finding the right place for a given element in a sorted list. So in beginning we compare the first two elements and sort them by comparing them. Then we pick the third element and find its proper position among the previous two sorted elements. This way we gradually go on adding more elements to the already sorted list by putting them in their proper position.
 
-```
+```python
+
 def insertion\_sort(InputList):
     for i in range(1, len(InputList)):
         j = i-1
@@ -154,7 +159,7 @@ print(list)
 
 Shell Sort involves sorting elements which are away from ech other. We sort a large sublist of a given list and go on reducing the size of the list until all elements are sorted. The below program finds the gap by equating it to half of the length of the list size and then starts sorting all elements in it. Then we keep resetting the gap until the entire list is sorted.
 
-```
+```python
 
 def shellSort(input\_list):
     gap = len(input\_list)// 2
@@ -187,7 +192,7 @@ print(list)
 
 In selection sort we start by finding the minimum value in a given list and move it to a sorted list. Then we repeat the process for each of the remaining elements in the unsorted list. The next element entering the sorted list is compared with the existing elements and placed at its correct position. So at the end all the elements from the unsorted list are sorted.
 
-```
+```python
 
 def selection\_sort(input\_list):
     for idx in range(len(input\_list)):
@@ -202,7 +207,8 @@ def selection\_sort(input\_list):
 
 **Swap the minimum value with the compared value**
 
-```
+```python
+
         input\_list[idx], input\_list[min\_idx]= input\_list[min\_idx], input\_list[idx]
 
 l =[19,2,31,45,30,11,121,27]
