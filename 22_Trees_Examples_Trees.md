@@ -30,12 +30,15 @@ We can write this code more concisely by nesting constructor invocations:
 ```
 Either way, the result is the tree at the beginning.
 
-# Traversing trees
+**Traversing trees**
 Any time you see a new data structure, your first question should be, How do I traverse it? The most natural way to traverse a tree is recursively. For example, if the tree contains integers as cargo, this function returns their sum:
- ```python
+
+```python
+
 def total(tree):
     if tree == None: return 0
     return total(tree.left) + total(tree.right) + tree.cargo
+
 ```
 
 The base case is the empty tree, which contains no cargo, so the sum is 0. The recursive step makes two recursive calls to find the sum of the child trees. When the recursive calls complete, we add the cargo of the parent and return the total.
@@ -56,9 +59,11 @@ Looking at the figure, there is no question what the order of operations is; the
 
 Expression trees have many uses. The example in this chapter uses trees to translate expressions to postfix, prefix, and infix. Similar trees are used inside compilers to parse, optimize, and translate programs.
 
-# Tree traversal¶
+**Tree traversal¶**
 We can traverse an expression tree and print the contents like this:
+
 ```python
+
 def print_tree(tree):
     if tree == None: return
     print tree.cargo,
@@ -66,10 +71,12 @@ def print_tree(tree):
     print_tree(tree.right)
 ```
 In other words, to print a tree, first print the contents of the root, then print the entire left subtree, and then print the entire right subtree. This way of traversing a tree is called a preorder, because the contents of the root appear before the contents of the children. For the previous example, the output is:
+
 ```
 >>> tree = Tree('+', Tree(1), Tree('*', Tree(2), Tree(3)))
 >>> print_tree(tree)
 + 1 * 2 3
+
 ```
 This format is different from both postfix and infix; it is another notation called prefix, in which the operators appear before their operands.
 
@@ -98,14 +105,18 @@ To be fair, we should point out that we have omitted an important complication. 
 Nevertheless, with a few improvements, the expression tree and the three recursive traversals provide a general way to translate expressions from one format to another.
 
 If we do an inorder traversal and keep track of what level in the tree we are on, we can generate a graphical representation of a tree:
+
 ```python
 def print_tree_indented(tree, level=0):
     if tree == None: return
     print_tree_indented(tree.right, level+1)
     print '  ' * level + str(tree.cargo)
     print_tree_indented(tree.left, level+1)
+
 ```
+
 The parameter level keeps track of where we are in the tree. By default, it is initially 0. Each time we make a recursive call, we pass level+1 because the child’s level is always one greater than the parent’s. Each item is indented by two spaces per level. The result for the example tree is:
+
 ```
 >>> print_tree_indented(tree)
     3
@@ -114,9 +125,9 @@ The parameter level keeps track of where we are in the tree. By default, it is i
 +
   1
 ```
+
 If you look at the output sideways, you see a simplified version of the original figure.
 
 ---
 
 <a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/23_Tree_Led_Demos.md" > Continue to Next Topic </a>
-
