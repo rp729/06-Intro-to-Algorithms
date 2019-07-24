@@ -1,7 +1,11 @@
 <a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md"> Return to TOC </a>
 
 ---
-## Python Program for First Binary Tree Search implementing Recursion
+
+## Python Binary Search
+
+---
+**Python Program for First Binary Tree Search - implementing Recursion**
 
 This is a Python program to perform depth-first search on a binary tree using recursion.
 Problem Description
@@ -16,7 +20,7 @@ Problem Solution
 6. The method search returns a node with a specified key.
 
 ```
-# Python Program for First Binary Tree Search without using Recursion
+**Python Program for First Binary Tree Search - without using Recursion**
 
 This is a Python program to perform depth-first search on a binary tree without using recursion.
 Problem Description
@@ -33,7 +37,7 @@ Problem Solution
 8. The method preorder_depth_first displays a preorder DFS traversal of the tree.
 9. The preorder traversal is implemented using a stack to avoid recursion.
 ```
-# Python Program to Find Nth Node in the Inorder Traversal of a Binary Tree
+**Python Program to Find Nth Node in the Inorder Traversal of a Binary Tree**
 
 This is a Python program to find the Nth node in the in-order traversal of a binary tree.
 Problem Description
