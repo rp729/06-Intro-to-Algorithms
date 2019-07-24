@@ -7,18 +7,18 @@
 A singly linked list is a list with only one pointer between two successive nodes. It can only be traversed in a single direction, that is, you can go from the first node in the list to the last node, but you cannot move from the last node to the first node.
 
 We can actually use the node class that we created earlier to implement a very simple singly linked list:
-```
+```python
     >>> n1 = Node('eggs')
     >>> n2 = Node('ham')
     >>> n3 = Node('spam')
 ```
 Next we link the nodes together so that they form a chain:
-```
+```python
     >>> n1.next = n2
     >>> n2.next = n3
 ```
 To traverse the list, you could do something like the following. We start by setting the variable current to the first item in the list:
-```
+```python
     current = n1
     while current:
         print(current.data)
@@ -37,7 +37,7 @@ We are going to address all these issues in the following sections.
 
 A list is clearly a separate concept from a node. So we start by creating a very simple class to hold our list. We will start with a constructor that holds a reference to the very first node in the list. Since this list is initially empty, we will start by setting this reference to None:
 
-```
+```python
     class SinglyLinkedList:
          def __init__(self):
              self.tail = None 
@@ -47,7 +47,7 @@ A list is clearly a separate concept from a node. So we start by creating a very
 The first operation that we need to perform is to append items to the list. This operation is sometimes called an insert operation. Here we get a chance to hide away the Node class. The user of our list class should really never have to interact with Node objects. These are purely for internal use.
 
 A first shot at an append() method may look like this:
-```
+```python
     class SinglyLinkedList:
          # ...
 
@@ -66,14 +66,14 @@ A first shot at an append() method may look like this:
 We encapsulate data in a node, so that it now has the next pointer attribute. From here we check if there are any existing nodes in the list (that is, does self.tail point to a Node). If there is none, we make the new node the first node of the list; otherwise, find the insertion point by traversing the list to the last node, updating the next pointer of the last node to the new node.
 
 We can append a few items:
-```
+```python
 >>> words = SinglyLinkedList()
- >>> words.append('egg')
- >>> words.append('ham')
- >>> words.append('spam')
+>>> words.append('egg')
+>>> words.append('ham')
+>>> words.append('spam')
 ```
 List traversal will work more or less like before. You will get the first element of the list from the list itself:
-```
+```python
 >>> current = words.tail
 >>> while current:
         print(current.data) 
@@ -84,7 +84,8 @@ List traversal will work more or less like before. You will get the first elemen
 There is a big problem with the append method in the previous section: it has to traverse the entire list to find the insertion point. This may not be a problem when there are just a few items in the list, but wait until you need to add thousands of items. Each append will be slightly slower than the previous one. A O(n) goes to prove how slow our current implementation of the append method will actually be.
 
 To fix this, we will store, not only a reference to the first node in the list, but also a reference to the last node. That way, we can quickly append a new node at the end of the list. The worst case running time of the append operation is now reduced from O(n) to O(1). All we have to do is make sure the previous last node points to the new node, that is about to be appended to the list. Here is our updated code:
-```
+```python
+
     class SinglyLinkedList:
          def __init__(self): 
              # ...
@@ -104,7 +105,8 @@ Take note of the convention being used. The point at which we append new nodes i
 **Getting the size of the list**
 
 We would like to be able to get the size of the list by counting the number of nodes. One way we could do this is by traversing the entire list and increasing a counter as we go along:
-```
+```python
+
     def size(self):
          count = 0
          current = self.tail
@@ -114,7 +116,8 @@ We would like to be able to get the size of the list by counting the number of n
          return count 
 ```
 This works, but list traversal is potentially an expensive operation that we should avoid when we can. So instead, we shall opt for another rewrite of the method. We add a size member to the SinglyLinkedList class, initializing it to 0 in the constructor. Then we increment size by one in the append method:
-```
+```python
+
 class SinglyLinkedList:
      def __init__(self):
          # ...
@@ -129,7 +132,8 @@ Because we are now only reading the size attribute of the node object, and not u
 **Improving list traversal**
 
 If you notice how we traverse our list. That one place where we are still exposed to the node class. We need to use node.data to get the contents of the node and node.next to get the next node. But we mentioned earlier that client code should never need to interact with Node objects. We can achieve this by creating a method that returns a generator. It looks as follows:
-```
+```python
+
     def iter(self):
         current = self.tail
         while current:
@@ -138,7 +142,8 @@ If you notice how we traverse our list. That one place where we are still expose
             yield val 
  ```
 Now list traversal is much simpler and looks a lot better as well. We can completely ignore the fact that there is anything called a Node outside of the list:
-```
+```python
+
     for word in words.iter():
         print(word) 
  ```
@@ -155,7 +160,8 @@ The following is a figure of a special case considered when deleting a node from
 When we want to delete a node that is between two other nodes, all we have to do is make the previous node directly to the successor of its next node. That is, we simply cut the node to be deleted out of the chain as in the preceding image.
 
 Here is the implementation of the delete() method may look like:
-```
+```python
+
   def delete(self, data):
         current = self.tail
         prev = self.tail
@@ -175,7 +181,8 @@ Here is the implementation of the delete() method may look like:
 **List search**
 
 We may also need a way to check whether a list contains an item. This method is fairly easy to implement thanks to the iter() method we previously wrote. Each pass of the loop compares the current data to the data being searched for. If a match is found, True is returned, or else False is returned:
-```
+```python
+
 def search(self, data):
      for node in self.iter():
          if data == node:
@@ -185,7 +192,8 @@ def search(self, data):
 **Clearing a list**
 
 We may want a quick way to clear a list. Fortunately for us, this is very simple. All we do is clear the pointers head and tail by setting them to None:
-```
+```python
+
 def clear(self): 
        """ Clear the entire list. """ 
        self.tail = None 
