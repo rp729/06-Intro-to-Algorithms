@@ -34,9 +34,9 @@ def bubblesort(list):
 
 ```python
 
-    for iter\_num in range(len(list)-1,0,-1):
+    for iter\_num in range( len(list) -1, 0, -1):
         for idx in range(iter\_num):
-            if list[idx]\&gt;list[idx+1]:
+            if list[idx] \ &gt;list[idx+1]:
                 temp = list[idx]
                 list[idx]= list[idx+1]
                 list[idx+1]= temp
@@ -72,7 +72,7 @@ Write a Python program to sort a list of elements using the bubble sort algorith
 ```python
 
 def merge\_sort(unsorted\_list):
-    if len(unsorted\_list)\&lt;=1:
+    if len(unsorted\_list) \&lt;=1:
         return unsorted\_list
 
 ```
@@ -100,14 +100,14 @@ def merge\_sort(unsorted\_list):
 
 def merge(left\_half,right\_half):
     res =[]
-    while len(left\_half)!=0and len(right\_half)!=0:
+    while len(left\_half)!=0 and len(right\_half)!=0:
         if left\_half[0]\&lt; right\_half[0]:
             res.append(left\_half[0])
             left\_half.remove(left\_half[0])
         else:
             res.append(right\_half[0])
             right\_half.remove(right\_half[0])
-    if len(left\_half)==0:
+    if len(left\_half) == 0:
         res = res + right\_half
     else:
         res = res + left\_half
