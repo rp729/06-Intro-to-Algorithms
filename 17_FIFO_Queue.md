@@ -8,7 +8,7 @@ Items can be added to the end of the container using put(), and removed from the
 
 The constructor for a FIFO queue is as follows:
 
-> class Queue.Queue(maxsize=0)
+> class Queue.Queue(maxsize = 0)
 
 The parameter maxsize is an integer used to limit the items that can be added into the queue.
 
