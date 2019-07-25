@@ -53,7 +53,7 @@ import queue
 
 # From class queue, Queue is created as an object
 # Now L is Queue of a maximum capacity of 20
-L = queue.Queue(maxsize=20)
+L = queue.Queue(maxsize = 20)
 
 # Data is inserted into Queue using put()
 # Data is inserted at the end
