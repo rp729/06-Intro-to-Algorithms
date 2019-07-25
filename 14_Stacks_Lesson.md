@@ -52,7 +52,7 @@ Now let us study an implementation of a stack in Python. We start off by creatin
 
 ```python
 class Node:
-    def _init_(self, data=None):
+    def _init_(self, data = None):
         self.data = data
         self.next = None
 ```
