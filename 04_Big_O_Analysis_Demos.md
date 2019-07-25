@@ -262,7 +262,7 @@ def swap(lyst, i, j):
 
 **Selection Sort Algorithm**
 
-![image](https://user-images.githubusercontent.com/19671036/60617391-42ee9580-9d99-11e9-8b8b-cc3bd69a9294.png)
+![](/Assets/sort1a.png)
 
 ```python
 
@@ -284,7 +284,7 @@ def selectionSort(lyst):
  
 **Bubble Sort Algorithms**
 
-![image](https://user-images.githubusercontent.com/19671036/60617432-5a2d8300-9d99-11e9-98a7-244e41034f3f.png)
+![](/Assets/sort2a.png)
 
 ```python
 
@@ -339,8 +339,7 @@ def insertionSort(lyst):
        lyst[j + 1] = itemToInsert
        i += 1
 ```       
-
-![image](https://user-images.githubusercontent.com/19671036/60617557-99f46a80-9d99-11e9-92fb-0fedd5714f07.png)
+![](/Assets/sort3a.png)
 
 ---
 
@@ -350,7 +349,7 @@ def insertionSort(lyst):
 
 **Quicksort:**
 
-![image](https://user-images.githubusercontent.com/19671036/60617571-a1b40f00-9d99-11e9-9e51-38febdb14eb5.png)
+![](/Assets/action4a.png)
 
 ---
 
@@ -447,10 +446,9 @@ def mergeSortHelper(lyst, copyBuffer, low, high):
 ```
 
 ---
+![](/Assets/leve5a.png)
 
-![image](https://user-images.githubusercontent.com/19671036/60617689-db851580-9d99-11e9-9baf-02a7c25c964a.png)
-
-![image](https://user-images.githubusercontent.com/19671036/60617697-e2138d00-9d99-11e9-9a4d-a8a84e11fc26.png)
+![](/Assets/leve6a.png)
 
 ---
 
