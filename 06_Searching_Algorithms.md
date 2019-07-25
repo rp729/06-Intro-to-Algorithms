@@ -58,7 +58,8 @@ A simple approach is to do [**linear search**](http://quiz.geeksforgeeks.org/lin
 
 **Binary Search:**  Search a sorted array by repeatedly dividing the search interval in half. Begin with an interval covering the whole array. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. Otherwise narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.
 
-![image](https://user-images.githubusercontent.com/19671036/60607432-d9fc2300-9d82-11e9-8fa2-f45a082e09cf.png)
+**Binary Search**
+![](/Assets/BinSearch.png)
 
 The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n).
 
