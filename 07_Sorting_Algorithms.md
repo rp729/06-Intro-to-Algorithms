@@ -36,7 +36,7 @@ def bubblesort(list):
 
     for iter\_num in range( len(list) -1, 0, -1):
         for idx in range(iter\_num):
-            if list[idx] \ &gt;list[idx+1]:
+            if list[idx] \&gt; list[idx+1]:
                 temp = list[idx]
                 list[idx]= list[idx+1]
                 list[idx+1]= temp
