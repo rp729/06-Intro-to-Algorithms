@@ -33,7 +33,7 @@ In a singly linked list, each node’s address part contains the information abo
 
 Let us see the following diagram to understand this better:
 
-![image](https://user-images.githubusercontent.com/19671036/60899510-3605f200-a230-11e9-9e68-aec6e6cff252.png)
+![](/Assets/linklist.png)
 
 Note: In the above figure, the last element 1 points to None. Even though these nodes are drawn contiguous to each other, in reality, they may or may not be in contiguous memory locations.
 
