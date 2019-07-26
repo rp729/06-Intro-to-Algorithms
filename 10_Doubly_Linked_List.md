@@ -25,7 +25,8 @@ Data represents the data value stored in the node.
 Previous represents a pointer that points to the previous node.
 Next represents a pointer that points to the next node in the list.
 
-![image](https://user-images.githubusercontent.com/19671036/60900225-77e36800-a231-11e9-8dce-7eb53a15459d.png)
+
+![](/Assets/null.png)
 
 The above picture represents a doubly linked list in which each node has two pointers to point to previous and next node respectively. Here, node 1 represents the head of the list. The previous pointer of the head node will always point to NULL. Next pointer of node one will point to node 2. Node 5 represents the tail of the list whose previous pointer will point to node 4, and the next will point to NULL.
 
