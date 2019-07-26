@@ -65,7 +65,7 @@ Write a Python program to sort a list of elements using the bubble sort algorith
 
 ---
 
-![image](https://user-images.githubusercontent.com/19671036/60606135-66591680-9d80-11e9-96a9-e588d887d4e2.png)
+![](/Assets/mergesort.png)
 
 **Merge sort divides the array into equal halves and then combines them in a sorted manner**
 
@@ -125,7 +125,7 @@ print(merge\_sort(unsorted\_list))
 
 **Insertion Sort**
 
-![image](https://user-images.githubusercontent.com/19671036/60606238-9e605980-9d80-11e9-8461-7d8e963af5de.png)
+![](/Assets/insertionsorta.png)
 
 Insertion sort involves finding the right place for a given element in a sorted list. So in beginning we compare the first two elements and sort them by comparing them. Then we pick the third element and find its proper position among the previous two sorted elements. This way we gradually go on adding more elements to the already sorted list by putting them in their proper position.
 
@@ -187,7 +187,7 @@ print(list)
 
 **Selection Sort**
 
-![image](https://user-images.githubusercontent.com/19671036/60606659-60176a00-9d81-11e9-8ae8-4c524968a5b6.png)
+![](/Assets/selectionsort.png)
 
 In selection sort we start by finding the minimum value in a given list and move it to a sorted list. Then we repeat the process for each of the remaining elements in the unsorted list. The next element entering the sorted list is compared with the existing elements and placed at its correct position. So at the end all the elements from the unsorted list are sorted.
 
