@@ -153,8 +153,7 @@ print(list)
 ---
 
 **Shell Sort**
-
-![image](https://user-images.githubusercontent.com/19671036/60606385-de274100-9d80-11e9-976d-21fe83bc946d.png)
+![](/Assets/shellsorta.png)
 
 
 Shell Sort involves sorting elements which are away from ech other. We sort a large sublist of a given list and go on reducing the size of the list until all elements are sorted. The below program finds the gap by equating it to half of the length of the list size and then starts sorting all elements in it. Then we keep resetting the gap until the entire list is sorted.
