@@ -31,13 +31,10 @@ Image The probability that a new customer will arrive at the checkout line durin
 The program’s outputs are the total number of customers processed, the number of customers left in the line when the time runs out, and the average waiting time for a customer. Table 8.3 summarizes the inputs and outputs.
 
 | Inputs | Range of Value for Inputs | Outputs |
-| :---:  | :---: | :---: |
+|--------| :---: |--------|
 |Total minutes| 0<=total <= 1000 | Total customers processed |
 |Average minutes per customer| 0<average <= total | Customers left in line |
 |Probability of a new arrival in the next minute| 0<probability <= 1| Average waiting time|
-
-
-![image](https://user-images.githubusercontent.com/19671036/60821590-764e6d00-a169-11e9-81f2-bec57d30d374.png)
 
 The User InterfaceThe following user interface for the system has been proposed:
 
