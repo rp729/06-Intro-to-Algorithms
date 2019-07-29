@@ -18,16 +18,14 @@ We shall provide various implementations of a queue but all will revolve around 
 
 To demonstrate the two operations, the following table shows the effect of adding and removing elements from a queue:
 
-| Queue Operation | Size | ContenTS | Operatn results |
+| Queue Operation | Size | Contents | Operatn results |
 | :---: | :---: | :---: | :---: |
 |Queue()|0|[]|Queue object created|
 |Enqueue "Mark" | 1 | ['mark'] | Mark added to queue |
 |Enqueue "John" | 2 | ['mark','john'] | John added to queue |
-|Size() | 2 | ['mark','john'] Number of items in queue returned |
+|Size() | 2 | ['mark','john'] | Number of items in queue returned |
 |Dequeue() | 1 | ['mark'] | John is dequeued and returned |
 |Dequeue() | 0 | [] | Mark is dequeued and returned|
-
-![image](https://user-images.githubusercontent.com/19671036/60819195-c840c400-a164-11e9-984a-345443c75b6f.png)
 
 Visualizing a Queue is easiest if you think of waiting in line at the bank with a “head” and “tail” on the line. Usually there’s a rope maze that has an entrance at the end and an exit where the tellers are located. You enter the queue by entering the “tail” of this rope maze line, and we’ll call that shift because that’s a common programming word in the Queue data structure. Once you enter the bank line (queue), you can’t just jump the line and leave or else people will get mad. So you wait, and as each person in front of you exits the line you get closer to exiting from the “head.” Once you reach the end then you can exit, and we’ll call that unshift. A Queue is therefore similar to a DoubleLinkedList because you are working from both ends of the data structure.
 
