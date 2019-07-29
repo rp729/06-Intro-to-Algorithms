@@ -18,8 +18,8 @@ We shall provide various implementations of a queue but all will revolve around 
 
 To demonstrate the two operations, the following table shows the effect of adding and removing elements from a queue:
 
-|Queue Operation|    Size    |  Contents   |   Operatn results|
-|-------------------------------------------------------------|
+| Queue Operation | Size | ContenTS | Operatn results |
+| :---: | :---: | :---: | :---: |
 |Queue()|)|{}|Queue object created|
 |Enqueue "Mark" | 1 | {'mark'} | Mark added to queue |
 
