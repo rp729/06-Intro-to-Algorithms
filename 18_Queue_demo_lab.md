@@ -75,13 +75,15 @@ As far as classes and their overall responsibilities are concerned, the system i
 | |2. Knows when the cashier has provided enough service.  The class as a whole generates new customers when directed to do so according to the probability of a new customer arriving|
 |LinkedQueue | Used by a cashier to represent a line of customers|
 
-![image](https://user-images.githubusercontent.com/19671036/60821694-ab5abf80-a169-11e9-8b20-69ad082d8d6b.png)
-
 The relationships among these classes are shown in
+
+![](/Assets/Linkedqueue1.png)
 
 ![image](https://user-images.githubusercontent.com/19671036/60821748-c3324380-a169-11e9-9ae0-c6567faa23ed.png)
 
 The overall design of the system is reflected in the collaboration diagram shown
+
+![](/Assets/Linkedqueue2.png)
 
 ![image](https://user-images.githubusercontent.com/19671036/60821795-da713100-a169-11e9-8890-832b61536858.png)
 
