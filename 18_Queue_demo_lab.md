@@ -72,7 +72,8 @@ As far as classes and their overall responsibilities are concerned, the system i
 | |4. Gives the current customer a unit of service when directed to do so and releases the customer when the service has been completed|
 | Customer| A customer object:|
 | |1. Knows its arrival time and how much service it needs|
-
+| |2. Knows when the cashier has provided enough service.  The class as a whole generates new customers when directed to do so according to the probability of a new customer arriving|
+|LinkedQueue | Used by a cashier to represent a line of customers|
 
 ![image](https://user-images.githubusercontent.com/19671036/60821694-ab5abf80-a169-11e9-8b20-69ad082d8d6b.png)
 
