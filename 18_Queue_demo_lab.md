@@ -79,13 +79,9 @@ The relationships among these classes are shown in
 
 ![](/Assets/Linkedqueue1.png)
 
-![image](https://user-images.githubusercontent.com/19671036/60821748-c3324380-a169-11e9-9ae0-c6567faa23ed.png)
-
 The overall design of the system is reflected in the collaboration diagram shown
 
 ![](/Assets/Linkedqueue2.png)
-
-![image](https://user-images.githubusercontent.com/19671036/60821795-da713100-a169-11e9-8890-832b61536858.png)
 
 You can now design and implement each class in turn.
 
@@ -162,6 +158,17 @@ The last variable holds the customer currently being processed.
 To allow the market model to send a new customer to a cashier, the class implements the method addCustomer. This method expects a customer as a parameter and adds the customer to the cashier’s queue.
 
 The method serveCustomers handles the cashier’s activity during one clock tick. The method expects the current time as a parameter and responds in one of several different ways, as listed in
+
+|Condition|What It Means|Action to Perform|
+|---------|  :---:  |----------|
+|The current customer is None and the queue is empty| There are no customers to serve| Noen;just return |
+|The current customer is None and the queue is empty| There is a customer waiting at the front of the queue| 1. Pop a customer and make it the current customer|
+| |2. Ask it when it was instantiated, determine how long it has been waiting, and add that time to the total waiting time for all customers|
+| |3. Increment the number of customers served|
+| |4. Give the customer a unit of service and dismiss it if it is finished|
+|The current customer is not None| Serve the current customer|Give the customer one unit of service and dismiss it if it is finished|
+
+---
 
 ![image](https://user-images.githubusercontent.com/19671036/60822289-c8dc5900-a16a-11e9-8d48-4cde826a2154.png)
 
