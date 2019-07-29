@@ -67,7 +67,7 @@ Main menu
 **Classes**
 The application consists of a view class, called ERView, and a set of model classes. The view class interacts with the user and runs methods with the model. The class ERModel maintains a priority queue of patients. The class Patient represents patients, and the class Condition represents the three possible conditions. The relationships among the classes are shown in the next Figure
 
-![image](https://user-images.githubusercontent.com/19671036/60824111-a2b8b800-a16e-11e9-87ec-6c4e46fe1baf.png)
+![](/Assets/Condition1.png)
 
 **Design and Implementation**
 
