@@ -57,6 +57,16 @@ Waiting to be served: 2.38
 
 As far as classes and their overall responsibilities are concerned, the system is divided into a main function and several model classes. The main function is responsible for interacting with the user, validating the three input values, and communicating with the model. The design and implementation of this function require no comment, and the function’s code is not presented. The classes in the model are listed in the following table:
 
+| Class | Responsibilities|
+|--------|--------|
+|MarketModel|A market model does the following:
+             1.Runs the simulation.
+             2. Creates a cashier object.
+             3. Sends new customer objects to the cashier
+             4. Maintains an abstract clock
+             5. During each tick of the clock, tells the cashier to provide another unit of service to a customoer |
+|Cashier | A cashier
+
 ![image](https://user-images.githubusercontent.com/19671036/60821694-ab5abf80-a169-11e9-8b20-69ad082d8d6b.png)
 
 The relationships among these classes are shown in
