@@ -155,7 +155,7 @@ Another common operation that you would need to be able to do on a list is to de
 
 The following is a figure of a special case considered when deleting a node from the list:
 
-![image](https://user-images.githubusercontent.com/19671036/60835524-fcc67700-a188-11e9-86da-cd3429396bb4.png)
+![](/Assets/linkedlistdemo.png)
 
 When we want to delete a node that is between two other nodes, all we have to do is make the previous node directly to the successor of its next node. That is, we simply cut the node to be deleted out of the chain as in the preceding image.
 
