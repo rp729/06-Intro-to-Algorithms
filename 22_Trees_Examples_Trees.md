@@ -53,7 +53,7 @@ def total(tree):
 
 The base case is the empty tree, which contains no cargo, so the sum is 0. The recursive step makes two recursive calls to find the sum of the child trees. When the recursive calls complete, we add the cargo of the parent and return the total.
 
-# Expression trees
+**Expression trees**
 A tree is a natural way to represent the structure of an expression. Unlike other notations, it can represent the computation unambiguously. For example, the infix expression 1 + 2 * 3 is ambiguous unless we know that the multiplication happens before the addition.
 
 This expression tree represents the same computation:
@@ -69,7 +69,7 @@ Looking at the figure, there is no question what the order of operations is; the
 
 Expression trees have many uses. The example in this chapter uses trees to translate expressions to postfix, prefix, and infix. Similar trees are used inside compilers to parse, optimize, and translate programs.
 
-**Tree traversal¶**
+**Tree traversal**
 We can traverse an expression tree and print the contents like this:
 
 ```python
