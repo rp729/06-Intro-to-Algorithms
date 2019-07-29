@@ -163,9 +163,9 @@ The method serveCustomers handles the cashier’s activity during one clock tick
 |------------|-----------|----------|
 |The current customer is None and the queue is empty| There are no customers to serve| Noen;just return |
 |The current customer is None and the queue is empty| There is a customer waiting at the front of the queue| 1. Pop a customer and make it the current customer|
-| |2. Ask it when it was instantiated, determine how long it has been waiting, and add that time to the total waiting time for all customers|
-| |3. Increment the number of customers served|
-| |4. Give the customer a unit of service and dismiss it if it is finished|
+| | | 2. Ask it when it was instantiated, determine how long it has been waiting, and add that time to the total waiting time for all customers|
+| | | 3. Increment the number of customers served|
+| | | 4. Give the customer a unit of service and dismiss it if it is finished|
 |The current customer is not None| Serve the current customer|Give the customer one unit of service and dismiss it if it is finished|
 
 ---
