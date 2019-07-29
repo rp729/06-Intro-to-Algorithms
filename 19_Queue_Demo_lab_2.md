@@ -24,9 +24,10 @@ Each command button produces an appropriate message in the output area. This Tab
 
 |User Command|Program Response|
 |------------|----------------|
-|Schedule|Prompts the user for the patient's name and condition, and then prints <patients name> is added to the <condition> list|
-|Treat Next Patient|Prints<patient name> is being treated|
-|Treat All Patients|Prints<patient name> is being treated....Prints<patent name> is being treated|
+|Schedule|Prompts the user for the patient's name and condition, and then prints {patient name} is added to the {condition} list|
+|Treat Next Patient|Prints{patient name} is being treated|
+|Treat All Patients|Prints{patient name} is being treated....Prints {patent name} is being treated|
+
 ---
     
 Here is an interaction with the terminal-based interface:
