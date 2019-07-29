@@ -12,13 +12,13 @@ It is not always clear what productivity experts mean by “nonlinear” thinkin
 
 **EFamily Tree**
 
-![image](https://user-images.githubusercontent.com/19671036/60832293-24194600-a181-11e9-9c92-16a5d9a24f1f.png)
+![](/Assets/Tree1.png)
 
 **TREE DEFINITIONS AND PROPERTIES**
 
 A tree is an abstract data type that stores elements hierarchically. With the exception of the top element, each element in a tree has a parent element and zero or more children elements. A tree is usually visualized by placing elements inside ovals or rectangles, and by drawing the connections between parents and children with straight lines. (See Figure below) We typically call the top element the root of the tree, but it is drawn as the highest element, with the other elements being connected below (just the opposite of a botanical tree).
 
-![image](https://user-images.githubusercontent.com/19671036/60832389-5f1b7980-a181-11e9-8768-a16521ea9166.png)
+![](/Assets/Tree2.png)
 
  A tree with 17 nodes representing the organization of a fictitious corporation. The root stores Electronics R'Us. The children of the root store R & D, Sales, Purchasing, and Manufacturing. The internal nodes store Sales, International, Overseas, Electronics R'Us, and Manufacturing.
  
@@ -40,7 +40,7 @@ Earlier, we discussed the hierarchical relationship between files and directorie
 
 **Tree Representation of a File System**
 
-![image](https://user-images.githubusercontent.com/19671036/60832576-d5b87700-a181-11e9-861b-ff33f200af38.png)
+![](/Assets/Tree3.png)
 
 A node u is an ancestor of a node v if u = v or u is an ancestor of the parent of v. Conversely, we say that a node v is a descendant of a node u if u is an ancestor of v. For example, in Figure above, cs252/ is an ancestor of papers/, and pr3 is a descendant of cs016/. The subtree of T rooted at a node v is the tree consisting of all the descendants of v in T (including v itself). In Figure above, the subtree rooted at cs016/ consists of the nodes cs016/, grades, homeworks/, programs/, hw1, hw2, hw3, pr1, pr2, and pr3.
 
@@ -52,7 +52,7 @@ An edge of tree T is a pair of nodes (u, v) such that u is the parent of v, or v
 
 The BaseException class is the root of that hierarchy, while all user-defined exception classes should conventionally be declared as descendants of the more specific Exception class. 
 
-![image](https://user-images.githubusercontent.com/19671036/60832694-229c4d80-a182-11e9-8482-05af5ca26673.png)
+![](/Assets/Tree4.png)
 
 **Python's hierarchy of Exception Types**
 
