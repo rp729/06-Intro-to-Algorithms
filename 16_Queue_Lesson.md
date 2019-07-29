@@ -20,9 +20,12 @@ To demonstrate the two operations, the following table shows the effect of addin
 
 | Queue Operation | Size | ContenTS | Operatn results |
 | :---: | :---: | :---: | :---: |
-|Queue()|)|{}|Queue object created|
-|Enqueue "Mark" | 1 | {'mark'} | Mark added to queue |
-
+|Queue()|0|[]|Queue object created|
+|Enqueue "Mark" | 1 | ['mark'] | Mark added to queue |
+|Enqueue "John" | 2 | ['mark','john'] | John added to queue |
+|Size() | 2 | ['mark','john'] Number of items in queue returned |
+|Dequeue() | 1 | ['mark'] | John is dequeued and returned |
+|Dequeue() | 0 | [] | Mark is dequeued and returned|
 
 ![image](https://user-images.githubusercontent.com/19671036/60819195-c840c400-a164-11e9-984a-345443c75b6f.png)
 
