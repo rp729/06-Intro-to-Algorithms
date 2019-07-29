@@ -22,8 +22,13 @@ When the user selects the Schedule option, the program allows the user to enter 
 
 Each command button produces an appropriate message in the output area. This Table lists the interface’s responses to the commands.
 
-![image](https://user-images.githubusercontent.com/19671036/60823986-68e7b180-a16e-11e9-97d9-a82d5fdb2a58.png)
-
+|User Command|Program Response|
+|------------|----------------|
+|Schedule|Prompts the user for the patient's name and condition, and then prints <patients name> is added to the <condition> list|
+|Treat Next Patient|Prints<patient name> is being treated|
+|Treat All Patients|Prints<patient name> is being treated....Prints<patent name> is being treated|
+---
+    
 Here is an interaction with the terminal-based interface:
 
 ```python
