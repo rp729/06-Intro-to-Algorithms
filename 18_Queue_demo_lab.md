@@ -59,13 +59,20 @@ As far as classes and their overall responsibilities are concerned, the system i
 
 | Class | Responsibilities|
 |--------|--------|
-|MarketModel|A market model does the following:
-             1.Runs the simulation.
-             2. Creates a cashier object.
-             3. Sends new customer objects to the cashier
-             4. Maintains an abstract clock
-             5. During each tick of the clock, tells the cashier to provide another unit of service to a customoer |
-|Cashier | A cashier
+|MarketModel|A market model does the following:|
+| |1. Runs the simulation|
+| |2. Creates a cashier object|
+| |3. Sends new customer objects to the cashier|
+| |4. Maintains an abstract clock|
+| |5. During each tick of the clock, tells the cashier to provide another unit of servie to a customer|
+| Cashier | A cashier object does the following:|
+| |1. Contains a queue of customers objects|
+| |2. Adds new customer objects to this queue when directed to do so|
+| |3. Removes customers from the queue in turn|
+| |4. Gives the current customer a unit of service when directed to do so and releases the customer when the service has been completed|
+| Customer| A customer object:|
+| |1. Knows its arrival time and how much service it needs|
+
 
 ![image](https://user-images.githubusercontent.com/19671036/60821694-ab5abf80-a169-11e9-8b20-69ad082d8d6b.png)
 
