@@ -1,7 +1,7 @@
-<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md"> Return to TOC </a>
+|[Table of Contents](/master/00-Table-of-Contents.md)|
+|---|
 
 ---
-
 ## Stacks
 A stack is a data structure that is often likened to a stack of plates. 
 If you have just washed a plate, you put it on top of the stack. When you need a plate, 
@@ -137,4 +137,5 @@ def peek(self):
 
 ---
 
-<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/15_Stack%20Implementation_Lesson.md" > Continue to Next Topic </a>
+|[Next Topic](/15_Stack%20Implementation_Lesson.md)|
+|---|
