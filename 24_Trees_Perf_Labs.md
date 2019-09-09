@@ -115,3 +115,4 @@ Note: Search for a node to remove. If the node is found, delete the node.
 **End of Python Algorithms**
 
 |<a href="https://github.com/CyberTrainingUSAF/01-Course-Introduction-and-setup/blob/master/README.md"> Return to IDF Course introduction </a>|
+|---|
