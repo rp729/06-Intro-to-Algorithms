@@ -77,5 +77,5 @@ Output:
 7
 ```
 
-|[Next Topic](/18_Queue_demo_lab.md)|
+|[Queue Demo Lab](/18_Queue_demo_lab.md)|
 |---|
