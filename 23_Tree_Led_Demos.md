@@ -55,5 +55,5 @@ Problem Solution
 
 ---
 
-|[Next Topic](/24_Trees_Perf_Labs.md)|
+|[Performance Lab Set's 1 & 2](/24_Trees_Perf_Labs.md)|
 |---|
