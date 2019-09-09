@@ -1,4 +1,5 @@
-<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md"> Return to TOC </a>
+|[Table of Contents](/master/00-Table-of-Contents.md)|
+|---|
 
 ---
 
@@ -33,4 +34,5 @@ The program creates a doubly linked list and presents the user with a menu to pe
 
 ---
 
-<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/13_Singly_Linked_List_Lab.md"> **Continue to Singly Linked List Performance Lab** </a>
+|[Singly Linked List Performance Lab](/13_Singly_Linked_List_Lab.md)|
+|---|
