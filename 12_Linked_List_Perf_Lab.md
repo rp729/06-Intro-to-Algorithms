@@ -1,4 +1,4 @@
-|[Table of Contents](/master/00-Table-of-Contents.md)|
+|[Table of Contents](/00-Table-of-Contents.md)|
 |---|
 
 ---
