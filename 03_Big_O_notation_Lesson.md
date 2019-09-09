@@ -1,4 +1,5 @@
-<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/00-Table-of-Contents.md"> Return to TOC </a>
+|[Table of Contents](/master/00-Table-of-Contents.md)|
+|---|
 
 ---
 ### Notes On Big-O Notation
@@ -328,4 +329,5 @@ The depth of this tree (the number of levels it has) is n, and at each level we 
 
 ---
 
-<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/04_Big_O_Analysis_Demos.md"> Continue to Next topic </a>
+|[Next Topic](/04_Big_O_Analysis_Demos.md)|
+|---|
