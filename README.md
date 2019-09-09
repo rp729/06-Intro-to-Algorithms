@@ -1,4 +1,5 @@
-<a href="https://github.com/CyberTrainingUSAF/01-Course-Introduction-and-setup/blob/master/README.md" rel="Return to Course Introduction"> Return to Course introduction </a>
+|[Table of Contents](/00-Table-of-Contents.md)|
+|---|
 
 ---
 
@@ -18,4 +19,5 @@ algorithms for building easy and maintainable applications.
 
 ---
 
-<a href="https://github.com/CyberTrainingUSAF/06-Intro-to-Algorithms/blob/master/01_Algorithm_Analysis_Lesson.md" > Continue to Next Topic </a>
+|[Next Topic](/01_Algorithm_Analysis_Lesson.md)|
+|---|
