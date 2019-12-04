@@ -1,0 +1,14 @@
+'''
+1. Assume that each of the following expressions indicates the number of
+operations performed by an algorithm for a problem size of n. Point out
+the dominant term of each algorithm and use big-O notation to classify it.
+​
+    a. 2^n - 4n^2 + 5n
+       O(2^n)
+
+    b. 3n^2 + 6
+       O(n^2)
+
+    c. n^3 + n^2 - n
+       O(n^3)
+'''
