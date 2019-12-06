@@ -97,22 +97,18 @@ class DoublyLinkedList:
             self.delete(i1+1)
             self.insert(i2,probe_1.data)
             self.delete(i2+1)
-
-'''    def swap(self,index_1,index_2):
-        if self.head is None or self.head.next is None or index_1 == index_2:
-            pass
-        elif index_1 <= 0:
-            probe_1 = self.head
-            probe_2 = self.head
-            while index_2 > 1 and probe_2.next.next != None:
-                probe_2 = probe_2.next
-                index_2 -= 1
-
-        elif index_2 <= 0:
-            probe_1 = self.head
-            probe_2 = self.head
-        else:
-            pass'''
+    def reversed(self):
+        length = 1
+        probe = self.head
+        while probe != self.tail:
+            length += 1
+            probe = probe.next
+        probe_1 = 0
+        probe_2 = length - 1
+        while probe_2 > probe_1:
+            self.swap(probe_1,probe_2)
+            probe_1 += 1
+            probe_2 -= 1
 
 
 class Node():
@@ -170,10 +166,40 @@ class LinkedList:
                 index -= 1
             removedItem = probe.next.data
             probe.next = probe.next.next
+    def swap(self,index_1,index_2):
+        if self.head is None or self.head.next is None or index_1 == index_2:
+            pass
+        else:
+            i1 = index_1
+            i2 = index_2
+            probe_1 = self.head
+            probe_2 = self.head
+            while probe_1.next != None and index_1 > 0:
+                probe_1 = probe_1.next
+                index_1 -= 1
+            while probe_2.next != None and index_2 > 0:
+                probe_2 = probe_2.next
+                index_2 -= 1
+            self.insert_node(i1, probe_2.data)
+            self.delete_node(i1 + 1)
+            self.insert_node(i2, probe_1.data)
+            self.delete_node(i2 + 1)
+    def reversed(self):
+        length = 1
+        probe = self.head
+        while probe.next != None:
+            length += 1
+            probe = probe.next
+        probe_1 = 0
+        probe_2 = length - 1
+        while probe_2 > probe_1:
+            self.swap(probe_1,probe_2)
+            probe_1 += 1
+            probe_2 -= 1
 
 
 
-
+'''
 doubly_linked_list = DoublyLinkedList()
 doubly_linked_list.append("Ham_5")
 doubly_linked_list.insert(0,"Ham_2")
@@ -181,6 +207,20 @@ doubly_linked_list.insert(1,"Ham_3")
 doubly_linked_list.insert(2,"Ham_4")
 doubly_linked_list.prepend("Ham_1")
 doubly_linked_list.append('Ham_6')
-doubly_linked_list.swap(0,5)
+doubly_linked_list.swap(0,3)
+doubly_linked_list.append('Ham_7')
+doubly_linked_list.reversed()
 
 doubly_linked_list.print_linked_list()
+'''
+
+linked_list = LinkedList()
+linked_list.append("Ham_1")
+linked_list.append("Ham_2")
+linked_list.append("Ham_3")
+linked_list.append("Ham_4")
+linked_list.append("Ham_5")
+#linked_list.swap(0,4)
+linked_list.reversed()
+
+linked_list.print_linked_list()
