@@ -81,6 +81,6 @@ if __name__ == "__main__":
     second.next = third
     third.next = fourth
     fourth.next = fifth
-    llist.delete_index(4)
-
+    llist.delete_index(2)
+    llist.delete_node(4)
     llist.print_list()
